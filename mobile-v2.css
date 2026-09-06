@@ -1,0 +1,123 @@
+/* LINK Digital — mobile scene system v2
+   Goal: only the artwork moves on phones. Copy remains stable, readable and lightweight. */
+@media (max-width: 760px){
+  :root{--nav-h:68px}
+
+  .topbar{padding:10px 18px;min-height:68px}
+  .topbar nav>a:not(.nav-cta){display:none}
+  .nav-cta{font-size:15px!important;padding:12px 18px!important}
+
+  #sceneMount{padding:4px 0 22px}
+  .scroll-scene{height:142vh;padding:7px 0 16px}
+  .scroll-scene+.scroll-scene{border-top:1px solid rgba(0,0,0,.08)}
+
+  .sticky-stage{
+    top:calc(var(--nav-h) + 6px);
+    height:calc(100svh - var(--nav-h) - 14px);
+    width:calc(100% - 14px);
+    margin:0 auto;
+    border-radius:22px;
+    overflow:hidden;
+    background:#d7d4ca;
+    border:1px solid rgba(0,0,0,.16);
+    box-shadow:none;
+  }
+
+  /* The frame is a clean 16:9-ish visual field under the copy.
+     No cover crop, no zoom, no blur-heavy background. */
+  .scene-frame{
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    top:38%!important;
+    bottom:0!important;
+    width:100%!important;
+    height:62%!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+    background:#d7d4ca!important;
+    filter:brightness(1.18) contrast(.90) saturate(.82)!important;
+    transform:none!important;
+  }
+
+  .scene-placeholder{background:#d7d4ca!important}
+  .scene-placeholder:after,.scene-placeholder .scene-art{display:none!important}
+  .scene-overlay{
+    z-index:3!important;
+    background:linear-gradient(180deg,rgba(16,16,16,.12) 0%,rgba(16,16,16,.03) 34%,rgba(16,16,16,0) 52%)!important;
+    pointer-events:none;
+  }
+
+  /* Static copy. Inline transforms written by the desktop scroll system are overridden. */
+  .scene-copy,
+  .scroll-scene:nth-child(even) .scene-copy{
+    left:14px!important;
+    right:14px!important;
+    top:13px!important;
+    bottom:auto!important;
+    width:auto!important;
+    max-width:none!important;
+    transform:none!important;
+    padding:15px 16px 14px!important;
+    border-radius:18px!important;
+    background:rgba(12,12,12,.86)!important;
+    border:1px solid rgba(255,255,255,.14)!important;
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+    box-shadow:none!important;
+    color:#fff!important;
+  }
+
+  .scene-number,
+  .scene-title,
+  .scene-definition,
+  .scene-explanation,
+  .scene-price{
+    opacity:1!important;
+    transform:none!important;
+  }
+
+  .scene-number{font-size:10px!important;letter-spacing:.19em!important}
+  .scene-title{font-size:clamp(34px,10.5vw,48px)!important;line-height:.92!important;margin:7px 0 9px!important;letter-spacing:-.055em!important}
+  .scene-definition{font-size:15.5px!important;line-height:1.28!important;margin:0 0 8px!important;color:#f7f6f1!important;font-weight:700!important}
+  .scene-explanation{font-size:12.5px!important;line-height:1.42!important;color:#d8d7d1!important;margin:0!important;max-width:none!important}
+  .scene-explanation strong{color:#fff!important}
+  .scene-price{font-size:12.5px!important;margin-top:10px!important;padding:9px 11px!important;border-radius:9px!important}
+
+  /* Secondary benefit stays in the map on mobile, keeping the frame unobstructed. */
+  .scene-adds{display:none!important}
+  .progress-rail{right:7px!important;top:69%!important;height:19vh!important;width:3px!important;z-index:7!important}
+
+  /* Hero, maps and packs remain comfortable on touch. */
+  .hero,.map-section,.packs-section,.story-intro,.closing{width:calc(100% - 18px)!important;margin-left:auto!important;margin-right:auto!important}
+  .service-map{gap:10px!important}
+  .map-list button,.pack-card button,.button{min-height:44px}
+}
+
+@media (max-width: 390px){
+  .scroll-scene{height:138vh}
+  .scene-copy,.scroll-scene:nth-child(even) .scene-copy{left:10px!important;right:10px!important;top:10px!important;padding:13px 14px!important}
+  .scene-title{font-size:36px!important}
+  .scene-definition{font-size:14.5px!important}
+  .scene-explanation{font-size:11.8px!important;line-height:1.38!important}
+  .scene-frame{top:39%!important;height:61%!important}
+}
+
+@media (max-width: 760px) and (orientation: landscape){
+  .scroll-scene{height:128vh}
+  .sticky-stage{height:calc(100svh - var(--nav-h) - 10px)}
+  .scene-copy,.scroll-scene:nth-child(even) .scene-copy{
+    left:12px!important;right:auto!important;top:50%!important;width:42%!important;
+    transform:translateY(-50%)!important;padding:12px 13px!important;
+  }
+  .scene-title{font-size:31px!important}
+  .scene-definition{font-size:13px!important}
+  .scene-explanation{font-size:11px!important;line-height:1.32!important}
+  .scene-price{margin-top:7px!important;padding:7px 9px!important}
+  .scene-frame{left:43%!important;right:0!important;top:0!important;width:57%!important;height:100%!important;object-fit:contain!important}
+  .progress-rail{top:50%!important;height:28vh!important}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .scene-frame{transition:none!important}
+}
