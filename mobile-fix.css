@@ -1,0 +1,79 @@
+/* Mobile scene parity with desktop: preserve the full 16:9 artwork instead of cropping it */
+@media (max-width: 760px){
+  :root{--nav-h:68px}
+  .topbar{padding:10px 18px;min-height:68px}
+  .topbar nav>a:not(.nav-cta){display:none}
+  .nav-cta{font-size:15px!important;padding:12px 18px!important}
+
+  #sceneMount{padding:6px 0 22px}
+  .scroll-scene{height:155vh;padding:8px 0 18px}
+  .sticky-stage{
+    top:calc(var(--nav-h) + 6px);
+    height:calc(100svh - var(--nav-h) - 14px);
+    width:calc(100% - 14px);
+    border-radius:22px;
+    background:#111;
+    border:1px solid rgba(0,0,0,.22);
+  }
+
+  /* Frame occupies a 16:9 visual window and stays complete/sharp. */
+  .scene-canvas{
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    top:auto!important;
+    bottom:0!important;
+    width:100%!important;
+    height:58%!important;
+    object-fit:contain;
+  }
+  .scene-placeholder{background:#111}
+  .scene-placeholder:after{display:none}
+  .scene-overlay{
+    background:linear-gradient(180deg,rgba(8,8,8,.34) 0%,rgba(8,8,8,.12) 42%,rgba(8,8,8,0) 62%);
+  }
+
+  /* Compact editorial caption: same hierarchy as desktop, much less obstruction. */
+  .scene-copy,
+  .scroll-scene:nth-child(even) .scene-copy{
+    left:14px!important;
+    right:14px!important;
+    top:14px!important;
+    bottom:auto!important;
+    transform:none!important;
+    width:auto!important;
+    max-width:none!important;
+    padding:17px 18px 16px!important;
+    border-radius:18px!important;
+    background:rgba(10,10,10,.70)!important;
+    border:1px solid rgba(255,255,255,.13)!important;
+    backdrop-filter:blur(12px)!important;
+    -webkit-backdrop-filter:blur(12px)!important;
+    box-shadow:0 12px 36px rgba(0,0,0,.16)!important;
+  }
+  .scene-number{font-size:11px!important;letter-spacing:.18em}
+  .scene-title{font-size:clamp(38px,12vw,56px)!important;line-height:.91!important;margin:8px 0 10px!important;letter-spacing:-.06em!important}
+  .scene-definition{font-size:17px!important;line-height:1.28!important;margin:0 0 9px!important}
+  .scene-explanation{font-size:13px!important;line-height:1.48!important;color:#d7d6d0!important;margin:0!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .scene-price{font-size:13px!important;margin-top:12px!important;padding:10px 12px!important;border-radius:10px!important}
+
+  /* Keep secondary benefit off the artwork on phones; detail remains in the map. */
+  .scene-adds{display:none!important}
+  .progress-rail{right:8px!important;height:22vh!important;top:68%!important}
+}
+
+@media (max-width: 390px){
+  .scene-copy,.scroll-scene:nth-child(even) .scene-copy{left:11px!important;right:11px!important;top:11px!important;padding:14px 15px!important}
+  .scene-title{font-size:39px!important}
+  .scene-definition{font-size:15px!important}
+  .scene-explanation{font-size:12px!important;-webkit-line-clamp:2}
+  .scene-canvas{height:55%!important}
+}
+
+@media (max-width: 760px) and (orientation: landscape){
+  .scroll-scene{height:135vh}
+  .scene-copy,.scroll-scene:nth-child(even) .scene-copy{width:44%!important;right:auto!important;top:50%!important;transform:translateY(-50%)!important}
+  .scene-title{font-size:34px!important}
+  .scene-explanation{display:none}
+  .scene-canvas{left:42%!important;width:58%!important;height:100%!important;bottom:0!important}
+}
