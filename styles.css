@@ -15,3 +15,19 @@
 @media(max-width:390px){.hero h1{font-size:46px}.scene-title{font-size:40px}.scene-copy{padding:13px 14px}.scene-definition{font-size:14px}.scene-explanation{font-size:11px}.scene-adds{display:none}.scroll-scene{height:138vh}.sticky-stage{height:calc(100svh - var(--nav-h) - 8px)}}
 @media(orientation:landscape) and (max-height:620px){.sticky-stage{height:calc(100dvh - var(--nav-h) - 8px)}.scene-copy{top:50%;transform:translateY(-50%);max-height:calc(100% - 24px);overflow:auto}.scene-title{font-size:46px}.scene-adds{display:none}.scroll-scene{height:170vh}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.scroll-scene{height:auto}.sticky-stage{position:relative;top:auto;height:min(760px,88vh)}.button,.pack-card,.map-list button{transition:none!important}}
+/* LINK MARKETING: catálogo comercial transversal, sin alterar los packs existentes */
+.mkt-section{width:min(1240px,calc(100% - 28px));margin:22px auto 68px;scroll-margin-top:85px}
+.mkt-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.mkt-card{display:flex;flex-direction:column;min-width:0;padding:24px;background:var(--paper);border:1px solid var(--line);border-radius:24px}
+.mkt-card.mkt-featured{border-color:#9eae81;background:#f2f4ec}
+.mkt-kicker{font-size:10px;font-weight:900;letter-spacing:.12em;color:var(--muted)}
+.mkt-card h3{font-size:clamp(24px,2.5vw,34px);line-height:1;letter-spacing:-.055em;margin:18px 0 8px}
+.mkt-card p{font-size:13px;line-height:1.5;color:var(--muted);min-height:64px}
+.mkt-price{font-size:29px;letter-spacing:-.055em;margin:6px 0 15px;font-variant-numeric:tabular-nums}
+.mkt-price small{font-size:11px;letter-spacing:0;font-weight:600;color:var(--muted)}
+.mkt-card ul{padding-left:18px;margin:0 0 25px;font-size:12px;line-height:1.65;flex:1}
+.mkt-card li{margin-bottom:6px}
+.mkt-cta{width:100%;font-size:12px}
+.mkt-note{color:var(--muted);font-size:12px;line-height:1.6;margin:14px 2px 0;max-width:930px}
+@media(max-width:1000px){.mkt-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.mkt-grid{grid-template-columns:1fr}.mkt-card{padding:21px}.mkt-card p{min-height:0}.mkt-section .section-heading h2{font-size:42px}}
