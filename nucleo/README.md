@@ -49,3 +49,16 @@ Tablas específicas: `public.link_digital_dossiers` y `public.link_digital_notes
 
 ## Despliegue
 La web actual en producción se sirve desde un Worker Cloudflare monolítico llamado `linkdigital`, **no** desde el antiguo HTML raíz de este repositorio. Para no destruir la web vigente, solo se añadió el enrutamiento `/nucleo` al Worker existente y se conservó íntegra su respuesta pública original. El archivo `nucleo/index.html` versiona la interfaz privada, pero cambiar este archivo en GitHub no lo publicará automáticamente: para actualizar la ruta privada hay que sincronizarla con el Worker y validar el acceso autenticado. No volver a desplegar el antiguo `index.html` raíz sobre producción.
+
+## 15-oct-2026 · Migración del informe Caracol
+- Fuente preservada: repositorio `gonzalogaraymunoz-star/propuesta`, commit `a9ca8c0529b9df27d979b8ee53202ed802ace180` (Vercel `propuesta-nine.vercel.app`).
+- Copia versionada íntegra: `informes/caracol/2026-09.html` (septiembre: trabajo/resultados; octubre: planificación; preserva todos los bloques del documento original).
+- URL nueva en el mismo dominio Cloudflare: `/informes/caracol/2026-09`. El documento de resultados es una vista compartible de solo lectura, sin panel, sesión ni datos internos de Núcleo.
+- Logotipo servido por `/informes/caracol/assets/caracol-logo.webp` mediante proxy del Worker a un commit fijado de GitHub. Otras imágenes de publicaciones conservan las URLs originales (Zernio/Instagram), cuya vigencia depende del proveedor.
+- La ruta no se anuncia en el sitio comercial; cabeceras `noindex`. IMPORTANTE: el informe es accesible para **cualquier persona con el enlace**, no está protegido por contraseña. No poner contenido confidencial en esta vista sin añadir controles de acceso adicionales.
+- Núcleo CRM sigue restringido a propietario autenticado con RLS; no se exponen notas, convenios internos ni márgenes en el informe compartido.
+- `link_digital_dossiers.report_url` para Caracol apunta al nuevo informe. `proposal_url` se limpió porque Vercel contenía un **informe**, no la propuesta comercial original; se deja pendiente adjuntar el PDF real. `agreement_url` sigue pendiente, sin inventar.
+- La ficha 360° pasó a modo **consulta / navegación**; sin formulario de edición ni creación manual desde la interfaz. La ejecución se gestiona en LINK TASK y la información se conserva en Control Central.
+- Despliegue producido mediante Cloudflare Worker `linkdigital` con vista previa compilada y copia de seguridad del script previo: `linkdigital-backup-before-report-20261015`.
+- No se eliminó el origen en Vercel para evitar romper enlaces antiguos. Cuando se valide con el cliente se puede retirar o redirigir el dominio anterior.
+- Validaciones técnicas: carga de script por Cloudflare API, presencia de ruta privada, ruta de informe y ruta de logotipo, y persistencia de URLs en Supabase. La comprobación visual desde navegador autenticado y la carga de imágenes externas continúan pendientes.
