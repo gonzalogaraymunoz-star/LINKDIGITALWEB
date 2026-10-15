@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <meta name="theme-color" content="#4a1c08" />
+  <title>CARACOL · Septiembre / Octubre 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/webp" href="/informes/caracol/assets/caracol-logo.webp">
+  <meta name="description" content="Reporte de marketing Caracol · resultados y trabajo editorial de septiembre, planificación de octubre 2026. Documento de resultados, no propuesta comercial ni convenio." />
+  <style>
+    :root{
+      --caracol:#42d692;
+      --ink:#111411;
+      --ink-2:#1a1f1b;
+      --paper:#f4f1e9;
+      --paper-2:#ebe6da;
+      --muted:#6e716d;
+      --white:#fff;
+      --line:rgba(17,20,17,.13);
+      --warm:#e7b06d;
+      --radius:28px;
+      --shadow:0 18px 50px rgba(17,20,17,.10);
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:var(--paper);
+      color:var(--ink);
+      line-height:1.45;
+      letter-spacing:-.01em;
+    }
+    a{color:inherit}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+    .progress{position:fixed;top:0;left:0;width:0;height:3px;background:var(--caracol);z-index:50}
+    .wrap{width:min(calc(100% - 32px),var(--max));margin:auto}
+    .nav{
+      position:sticky;top:0;z-index:40;
+      background:rgba(244,241,233,.88);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-in{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.04em}
+    .dot{width:13px;height:13px;border-radius:50%;background:var(--caracol);box-shadow:0 0 0 6px rgba(66,214,146,.13)}
+    .nav-links{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+    .nav-links a{
+      text-decoration:none;font-size:13px;font-weight:750;
+      padding:9px 12px;border-radius:999px;color:#414641
+    }
+    .nav-links a:hover,.nav-links a.active{background:var(--ink);color:white}
+    .hero{padding:74px 0 44px}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:12px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;
+      color:#2e4d3d
+    }
+    .eyebrow:before{content:"";width:26px;height:2px;background:var(--caracol)}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(48px,9vw,116px);line-height:.88;letter-spacing:-.075em;margin:18px 0 28px;max-width:970px}
+    h1 .green{color:#28b774}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:end}
+    .lead{font-size:clamp(20px,2.7vw,31px);line-height:1.18;max-width:760px;color:#303630;margin-bottom:0}
+    .hero-note{
+      background:var(--ink);color:white;border-radius:var(--radius);
+      padding:26px;box-shadow:var(--shadow)
+    }
+    .hero-note strong{display:block;font-size:40px;line-height:1;margin-bottom:9px}
+    .hero-note small{color:#bdc4bd;font-size:14px}
+    .hero-note .greenline{height:3px;background:var(--caracol);margin:20px 0}
+    .section{padding:74px 0;border-top:1px solid var(--line)}
+    .section.dark{background:var(--ink);color:white;border:0}
+    .section-head{display:grid;grid-template-columns:.72fr 1.28fr;gap:28px;align-items:start;margin-bottom:40px}
+    .kicker{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#66806f}
+    .dark .kicker{color:#80c6a0}
+    h2{font-size:clamp(34px,5.5vw,72px);line-height:.95;letter-spacing:-.055em;margin-bottom:12px}
+    .section-intro{font-size:20px;line-height:1.35;color:#4d524e;max-width:780px}
+    .dark .section-intro{color:#c7ccc7}
+    .contract{
+      display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:28px
+    }
+    .contract-card{background:white;border:1px solid var(--line);border-radius:20px;padding:18px;min-height:150px}
+    .contract-card b{display:block;font-size:13px;margin-bottom:8px}
+    .contract-card span{font-size:12px;color:var(--muted)}
+    .contract-card .status{margin-top:17px;color:#247a52;font-weight:800}
+    .metrics{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:26px 0}
+    .metric{
+      background:white;border:1px solid var(--line);border-radius:22px;padding:20px;min-height:132px
+    }
+    .metric .n{font-size:38px;font-weight:900;letter-spacing:-.05em;line-height:1}
+    .metric .l{font-size:12px;font-weight:750;color:var(--muted);margin-top:8px}
+    .metric.accent{background:var(--caracol);border-color:transparent}
+    .metric.accent .l{color:#163425}
+    .small-note{font-size:12px;color:#737773}
+    .timeline{
+      display:grid;grid-template-columns:150px 1fr;gap:26px;align-items:start;
+      margin-top:32px;padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:#fff
+    }
+    .timeline-big{font-size:60px;font-weight:950;letter-spacing:-.07em;line-height:.9;color:#1da969}
+    .timeline p{margin-bottom:0}
+    .case{display:grid;grid-template-columns:360px 1fr;gap:30px;margin:28px 0 54px;align-items:start}
+    .post{
+      position:sticky;top:94px;background:#0e100e;border-radius:28px;overflow:hidden;
+      box-shadow:var(--shadow);color:white
+    }
+    .post img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#222}
+    .post-body{padding:18px}
+    .post-title{font-size:17px;font-weight:850;line-height:1.15;margin-bottom:12px}
+    .post-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .post-stat{background:#1d211e;padding:10px;border-radius:13px}
+    .post-stat strong{display:block;font-size:18px}
+    .post-stat span{font-size:10px;color:#acb4ad}
+    .post-link{display:inline-block;margin-top:13px;font-size:12px;color:#a7efc9}
+    .case-copy h3{font-size:clamp(30px,4vw,50px);letter-spacing:-.045em;line-height:1;margin-bottom:14px}
+    .case-copy>p{font-size:18px;color:#4b504c}
+    .reflections{display:grid;gap:10px;margin-top:24px}
+    .reflection{
+      border:1px solid var(--line);border-radius:20px;background:white;overflow:hidden
+    }
+    .reflection button{
+      appearance:none;border:0;background:transparent;width:100%;display:grid;
+      grid-template-columns:42px 1fr auto;gap:12px;align-items:center;text-align:left;
+      padding:16px 18px;cursor:pointer;color:var(--ink)
+    }
+    .reflection .num{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--paper-2);font-size:12px;font-weight:900}
+    .reflection .problem{font-weight:850}
+    .reflection .chev{font-size:18px}
+    .reflection .answer{display:none;padding:0 18px 18px 72px;color:#505650;font-size:14px}
+    .reflection.open .answer{display:block}
+    .reflection.open .num{background:var(--caracol)}
+    .experiment{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+    .exp{
+      display:grid;grid-template-columns:104px 1fr;gap:14px;background:white;border:1px solid var(--line);
+      border-radius:22px;padding:12px
+    }
+    .exp img{width:104px;height:128px;object-fit:cover;border-radius:14px;background:#ddd}
+    .exp strong{font-size:24px;display:block}
+    .bar{height:8px;background:#e1ddd3;border-radius:99px;overflow:hidden;margin:7px 0 14px}
+    .bar i{display:block;height:100%;background:var(--caracol);border-radius:99px}
+    .strategy{
+      display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:26px
+    }
+    .strategy article{
+      min-height:240px;border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:20px;
+      display:flex;flex-direction:column;justify-content:space-between;background:#171b18
+    }
+    .strategy b{font-size:18px}
+    .strategy p{font-size:13px;color:#b7bdb7;margin:12px 0 0}
+    .strategy .s-num{font-size:12px;color:#6fe3a9;font-weight:900}
+    .month-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+    .week{
+      background:#fffaf0;
+      border:1px solid rgba(244,190,93,.34);
+      border-radius:22px;
+      padding:20px;
+      color:#4a1c08;
+    }
+    .week strong{
+      display:block;
+      margin-bottom:12px;
+      color:#4a1c08;
+      font-weight:900;
+    }
+    .week ul{
+      margin:0;
+      padding-left:18px;
+      color:#5f5147;
+      font-size:14px;
+    }
+    .week li::marker{color:#b96c2f}
+    .divider{height:1px;background:rgba(255,255,255,.15);margin:36px 0}
+    .upgrade{
+      background:linear-gradient(135deg,#15221b,#0d110f 68%);color:white;
+      border-radius:34px;padding:34px;position:relative;overflow:hidden
+    }
+    .upgrade:after{
+      content:"LINK";position:absolute;right:-20px;bottom:-55px;font-size:170px;font-weight:950;
+      letter-spacing:-.1em;color:rgba(66,214,146,.08);pointer-events:none
+    }
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);
+      padding:8px 12px;border-radius:999px;font-size:12px;font-weight:850;color:#b8ebcf
+    }
+    .upgrade h2{max-width:800px;margin-top:22px}
+    .upgrade .big-copy{font-size:21px;max-width:820px;color:#d4dad5}
+    .not-included{
+      margin:26px 0;background:rgba(66,214,146,.11);border:1px solid rgba(66,214,146,.36);
+      border-radius:20px;padding:18px;font-weight:800;color:#d8f7e6
+    }
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+    .product{background:#f4f1e9;color:#111411;border-radius:24px;padding:22px;min-height:260px;position:relative}
+    .product .tag{font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:#37634b}
+    .product h3{font-size:27px;letter-spacing:-.04em;margin:14px 0 8px}
+    .product p{font-size:14px;color:#545a55}
+    .flow{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+    .flow span{font-size:11px;font-weight:800;padding:8px 10px;border-radius:999px;background:#e5dfd2}
+    .model{
+      margin-top:22px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px
+    }
+    .model article{border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:16px}
+    .model b{display:block;color:#7be7ae;margin-bottom:5px}
+    .model p{font-size:13px;color:#bbc2bc;margin:0}
+    .footer{padding:44px 0 70px;color:#565b56;font-size:13px}
+    .footer-line{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:20px;flex-wrap:wrap}
+    .source{font-size:11px;color:#7a7d7a;margin-top:12px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+    .cta{
+      border:0;border-radius:999px;padding:13px 17px;font-weight:850;cursor:pointer;
+      background:var(--caracol);color:#102217;text-decoration:none;display:inline-flex;align-items:center
+    }
+    .cta.secondary{background:transparent;color:white;border:1px solid rgba(255,255,255,.25)}
+    @media(max-width:980px){
+      .hero-grid,.section-head,.case{grid-template-columns:1fr}
+      .post{position:relative;top:auto;max-width:520px}
+      .contract,.metrics{grid-template-columns:repeat(3,1fr)}
+      .strategy{grid-template-columns:repeat(2,1fr)}
+      .month-grid,.products{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:640px){
+      .wrap{width:min(calc(100% - 22px),var(--max))}
+      .nav-in{align-items:flex-start;padding:13px 0}
+      .nav-links{display:none}
+      .hero{padding-top:48px}
+      .contract,.metrics,.strategy,.month-grid,.products,.model,.experiment{grid-template-columns:1fr}
+      .metric{min-height:auto}
+      .timeline{grid-template-columns:1fr}
+      .case{gap:18px}
+      .post{border-radius:22px}
+      .exp{grid-template-columns:88px 1fr}
+      .exp img{width:88px;height:110px}
+      .upgrade{padding:24px}
+      h1{font-size:54px}
+    }
+  
+    /* CARACOL BRANDING · derivado de la pieza oficial aportada */
+    :root{
+      --caracol:#f4be5d;
+      --ink:#4a1c08;
+      --ink-2:#2d1006;
+      --paper:#f7efdf;
+      --paper-2:#ead9ba;
+      --muted:#786758;
+      --white:#fffaf0;
+      --line:rgba(74,28,8,.15);
+      --warm:#b86b2e;
+      --shadow:0 18px 44px rgba(74,28,8,.09);
+    }
+    body{
+      font-family:"Montserrat",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:var(--paper);
+      color:var(--ink);
+    }
+    h1,h2,.case-copy h3,.product h3,.metric .n,.timeline-big{
+      font-family:"Anton","Arial Narrow",Impact,sans-serif;
+      font-weight:400;
+      letter-spacing:.005em;
+    }
+    h1{letter-spacing:.005em;text-transform:uppercase;line-height:.94}
+    h1 .green{color:var(--caracol)}
+    h2{letter-spacing:.003em;line-height:1}
+    .progress{background:var(--caracol)}
+    .nav{
+      background:rgba(247,239,223,.94);
+      border-bottom-color:rgba(74,28,8,.14);
+    }
+    .nav-in{min-height:76px}
+    .brand{gap:13px;min-width:0}
+    .brand-logo{width:86px;height:auto;flex:0 0 auto}
+    .brand-report{
+      font-size:11px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;
+      color:#77513b;white-space:nowrap
+    }
+    .dot{display:none}
+    .nav-links a{color:#603d2c;font-weight:800}
+    .nav-links a:hover,.nav-links a.active{background:var(--ink);color:#fff4dc}
+    .eyebrow{color:#8c5b32}
+    .eyebrow:before{background:var(--caracol)}
+    .lead{color:#5d493b}
+    .hero-note{background:#3b1609;color:#fff5df}
+    .hero-note small{color:#dbc4a3}
+    .hero-note .greenline{background:var(--caracol)}
+    .kicker{color:#9a6333}
+    .dark .kicker{color:#f4be5d}
+    .section.dark{background:#2a0f06;color:#fff6e6}
+    .dark .section-intro{color:#ddc9aa}
+    .section-intro,.case-copy>p{color:#685548}
+    .contract-card,.metric,.timeline,.reflection,.exp,.week{background:#fffaf0}
+    .contract-card .status{color:#9c5524}
+    .metric.accent{background:var(--caracol);color:#3d1607}
+    .metric.accent .l{color:#5a2b10}
+    .timeline-big{color:#b36a2f}
+    .post{background:#2b1007;color:#fff7e9}
+    .post-stat{background:#3c190d}
+    .post-stat span{color:#d9c4a5}
+    .post-link{color:#ffd47a}
+    .reflection.open .num{background:var(--caracol);color:#3a1608}
+    .bar{background:#e8d6b8}
+    .bar i{background:var(--caracol)}
+    .strategy article{background:#37160b;border-color:rgba(244,190,93,.18)}
+    .strategy p{color:#d8c6a9}
+    .strategy .s-num{color:#f4be5d}
+    .divider{background:rgba(244,190,93,.18)}
+    .upgrade{background:linear-gradient(135deg,#3b170a,#210c05 72%)}
+    .upgrade:after{color:rgba(244,190,93,.07)}
+    .badge{color:#f7cf82;border-color:rgba(244,190,93,.28)}
+    .upgrade .big-copy{color:#ead9bd}
+    .not-included{
+      background:rgba(244,190,93,.09);
+      border-color:rgba(244,190,93,.34);
+      color:#ffebbf;
+    }
+    .product{background:#fff5df;color:#4a1c08}
+    .product .tag{color:#9a5b28}
+    .product p{color:#6b5546}
+    .flow span{background:#ead7b7}
+    .model article{border-color:rgba(244,190,93,.22)}
+    .model b{color:#f4be5d}
+    .model p{color:#d9c7aa}
+    .cta{background:var(--caracol);color:#3d1607}
+    .cta.secondary{color:#fff4de;border-color:rgba(244,190,93,.36)}
+    .source,.small-note,.footer{color:#806c5c}
+    @media(max-width:640px){
+      .brand-logo{width:70px}
+      .brand-report{font-size:9px;white-space:normal;max-width:110px;line-height:1.25}
+      h1{font-size:58px}
+    }
+
+  
+    /* LINK WORLD · capítulo de nueva asociación */
+    .link-world-section{
+      --link-cream:#f3f1e8;
+      --link-cream-2:#faf9f3;
+      --link-paper:#fffef9;
+      --link-charcoal:#171714;
+      --link-black:#0f0f0d;
+      --link-stone:#77776f;
+      --link-line:#dedbd0;
+      --link-acid:#dfff00;
+      --link-acid-soft:#efffb3;
+      background:var(--link-cream);
+      color:var(--link-black);
+      border-top:5px solid var(--link-acid);
+      padding-top:58px;
+    }
+    .link-association{
+      display:flex;align-items:center;justify-content:space-between;gap:24px;
+      padding-bottom:30px;border-bottom:1px solid var(--link-line);
+    }
+    .link-kicker{
+      font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--link-stone)
+    }
+    .association-lockup{display:flex;align-items:center;gap:14px}
+    .association-brand{
+      min-height:54px;padding:8px 13px;border:1px solid var(--link-line);border-radius:16px;
+      background:var(--link-paper);display:flex;align-items:center;gap:10px
+    }
+    .caracol-association img{width:50px;height:38px;object-fit:contain;mix-blend-mode:multiply}
+    .caracol-association span{font-size:11px;font-weight:900;letter-spacing:.08em;color:#4a1c08}
+    .association-plus{font-size:24px;font-weight:400;color:var(--link-stone)}
+    .link-association-brand{position:relative;padding-right:34px}
+    .link-association-brand strong{font-size:21px;letter-spacing:-.05em}
+    .link-association-brand small{font-size:9px;font-weight:800;letter-spacing:.1em;color:var(--link-stone)}
+    .link-association-brand i{
+      position:absolute;right:14px;width:8px;height:8px;border-radius:50%;
+      background:var(--link-acid);box-shadow:0 0 14px rgba(223,255,0,.65)
+    }
+    .link-world-hero{
+      display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:stretch;
+      padding:42px 0 28px
+    }
+    .link-world-copy{
+      background:var(--link-paper);border:1px solid var(--link-line);border-radius:26px;
+      padding:34px
+    }
+    .link-badge{
+      display:inline-flex;padding:8px 11px;border-radius:999px;background:var(--link-acid-soft);
+      color:var(--link-black);font-size:10px;font-weight:900;letter-spacing:.1em
+    }
+    .link-world-copy h2{
+      font-family:"Montserrat",sans-serif;font-weight:900;letter-spacing:-.055em;
+      font-size:clamp(38px,5vw,67px);line-height:.94;color:var(--link-black);margin:22px 0 18px
+    }
+    .link-lead{font-size:18px;line-height:1.45;color:#55554f;max-width:760px}
+    .link-boundary{
+      margin-top:25px;padding:16px 18px;border-radius:16px;background:var(--link-charcoal);
+      color:#fff;display:grid;gap:5px;border-bottom:3px solid var(--link-acid)
+    }
+    .link-boundary b{font-size:13px}
+    .link-boundary span{font-size:12px;color:#c7c7bd;line-height:1.5}
+    .link-route-card{
+      background:var(--link-charcoal);color:#fff;border-radius:26px;padding:24px;
+      box-shadow:0 18px 55px rgba(15,15,13,.09)
+    }
+    .route-head{display:flex;align-items:center;justify-content:space-between;color:#bdbdb3;font-size:10px;font-weight:900;letter-spacing:.12em}
+    .route-head i{width:9px;height:9px;border-radius:50%;background:var(--link-acid);box-shadow:0 0 14px rgba(223,255,0,.7)}
+    .route-list{list-style:none;padding:15px 0 0;margin:0;display:grid;gap:8px}
+    .route-list li{
+      display:grid;grid-template-columns:34px 1fr;gap:11px;align-items:center;
+      border-top:1px solid #33332e;padding:13px 0
+    }
+    .route-list b{
+      width:30px;height:30px;border-radius:50%;display:grid;place-items:center;
+      background:#242420;color:var(--link-acid);font-size:10px
+    }
+    .route-list span{font-size:13px;color:#e2e2db;font-weight:700}
+    .coupon-demo{
+      display:grid;grid-template-columns:1fr 360px;gap:30px;
+      margin:28px 0;padding:34px;background:var(--link-cream-2);
+      border:1px solid var(--link-line);border-radius:28px
+    }
+    .coupon-demo-copy h3{
+      font-family:"Montserrat",sans-serif;font-weight:900;letter-spacing:-.045em;
+      font-size:clamp(30px,4vw,48px);line-height:1;margin:14px 0;color:var(--link-black)
+    }
+    .coupon-demo-copy>p{max-width:720px;color:var(--link-stone);font-size:16px}
+    .coupon-options{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}
+    .coupon-option{
+      border:1px solid var(--link-line);background:var(--link-paper);color:var(--link-black);
+      border-radius:999px;padding:11px 14px;font-weight:850;font-size:12px;cursor:pointer;
+      transition:.18s ease
+    }
+    .coupon-option:hover{transform:translateY(-1px);border-color:var(--link-black)}
+    .coupon-option.active{
+      background:var(--link-black);color:#fff;border-color:var(--link-black);
+      box-shadow:inset 0 -3px 0 var(--link-acid)
+    }
+    .distribution-note{
+      display:grid;gap:6px;padding-top:18px;border-top:1px solid var(--link-line);
+      max-width:760px
+    }
+    .distribution-note b{font-size:12px}
+    .distribution-note span{font-size:13px;line-height:1.55;color:var(--link-stone)}
+    .coupon-phone{
+      width:100%;max-width:340px;justify-self:end;background:#090908;border:8px solid #161613;
+      border-radius:36px;padding:10px;box-shadow:0 24px 60px rgba(15,15,13,.18)
+    }
+    .coupon-phone-top{
+      display:flex;align-items:center;justify-content:space-between;padding:10px 9px 14px;color:#fff
+    }
+    .coupon-phone-top strong{font-size:18px;letter-spacing:-.04em}
+    .coupon-phone-top span{font-size:8px;font-weight:900;letter-spacing:.1em;color:#aaa}
+    .coupon-phone-top i{
+      display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--link-acid);
+      margin-right:5px;box-shadow:0 0 8px rgba(223,255,0,.7)
+    }
+    .coupon-phone-screen{background:var(--link-paper);border-radius:24px;padding:20px;color:var(--link-black);min-height:450px}
+    .coupon-near{font-size:9px;font-weight:900;letter-spacing:.13em;color:var(--link-stone)}
+    .coupon-merchant{display:flex;align-items:center;gap:10px;margin:17px 0}
+    .coupon-merchant img{width:48px;height:40px;object-fit:contain;mix-blend-mode:multiply}
+    .coupon-merchant b{display:block;font-size:13px}
+    .coupon-merchant span{display:block;font-size:9px;color:var(--link-stone);margin-top:2px}
+    .coupon-separator{height:1px;background:var(--link-line);margin:15px 0 22px}
+    .coupon-phone h4{font-size:31px;line-height:1;letter-spacing:-.045em;margin:0 0 11px}
+    .coupon-phone p{font-size:13px;line-height:1.45;color:#5f5f59;min-height:58px}
+    .coupon-benefit{
+      background:var(--link-acid-soft);border-left:3px solid var(--link-acid);
+      padding:12px;border-radius:10px;font-size:12px;font-weight:850;margin-top:17px
+    }
+    .coupon-validity{font-size:10px;color:var(--link-stone);margin:10px 0 18px}
+    .coupon-activate{
+      width:100%;border:0;border-radius:13px;background:var(--link-acid);color:var(--link-black);
+      padding:14px;font-weight:900;font-size:11px;letter-spacing:.04em;cursor:pointer;
+      display:flex;align-items:center;justify-content:space-between
+    }
+    .coupon-activate.activated{background:var(--link-charcoal);color:#fff;box-shadow:inset 0 -3px 0 var(--link-acid)}
+    .coupon-proof{text-align:center;font-size:9px;color:#9a9a91;margin-top:12px}
+    .link-products{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+    .link-products article{
+      background:var(--link-paper);border:1px solid var(--link-line);border-radius:20px;padding:20px
+    }
+    .link-products article>span{font-size:10px;font-weight:900;color:var(--link-stone)}
+    .link-products h3{
+      font-family:"Montserrat",sans-serif;font-size:20px;font-weight:900;letter-spacing:-.03em;margin:20px 0 8px
+    }
+    .link-products p{font-size:12px;color:var(--link-stone);margin:0;line-height:1.5}
+    .link-model{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+    .link-model article{
+      background:var(--link-charcoal);color:#fff;border-radius:18px;padding:17px;
+      border-bottom:2px solid var(--link-acid)
+    }
+    .link-model b{font-size:11px;color:var(--link-acid);letter-spacing:.08em}
+    .link-model p{font-size:12px;color:#bdbdb3;margin:7px 0 0;line-height:1.5}
+    .link-footnote{font-size:10px;color:var(--link-stone);margin:18px 2px 0}
+    @media(max-width:900px){
+      .link-world-hero,.coupon-demo{grid-template-columns:1fr}
+      .coupon-phone{justify-self:start;max-width:360px}
+      .link-products,.link-model{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      .link-association{align-items:flex-start;flex-direction:column}
+      .association-lockup{width:100%;justify-content:flex-start}
+      .association-brand{min-height:48px;padding:7px 9px}
+      .caracol-association img{width:42px;height:32px}
+      .link-world-copy,.coupon-demo{padding:22px}
+      .link-world-copy h2{font-size:42px}
+      .coupon-phone{max-width:none}
+    }
+
+  
+    /* RESULTADOS · comparación histórica */
+    .reach-compare{
+      margin-top:34px;padding:28px;border:1px solid var(--line);border-radius:28px;
+      background:#fffaf0;box-shadow:0 14px 42px rgba(74,28,8,.05)
+    }
+    .compare-head{
+      display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;
+      padding-bottom:22px;border-bottom:1px solid var(--line)
+    }
+    .compare-head h3{
+      font-family:"Montserrat",sans-serif;font-size:clamp(26px,3.5vw,42px);
+      font-weight:900;letter-spacing:-.045em;line-height:1.02;margin:10px 0;color:var(--ink)
+    }
+    .compare-head p{max-width:730px;color:var(--muted);font-size:13px;margin:0;line-height:1.55}
+    .compare-toggle{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+    .compare-mode{
+      border:1px solid var(--line);background:#f7efdf;color:var(--ink);
+      border-radius:999px;padding:10px 13px;font-weight:850;font-size:11px;cursor:pointer
+    }
+    .compare-mode.active{background:var(--ink);color:#fff6e6;border-color:var(--ink);box-shadow:inset 0 -3px 0 var(--caracol)}
+    .compare-layout{display:grid;grid-template-columns:1fr 270px;gap:24px;margin-top:24px}
+    .compare-bars{display:grid;gap:12px}
+    .compare-row{
+      display:grid;grid-template-columns:160px 1fr;gap:18px;padding:17px 0;
+      border-bottom:1px solid rgba(74,28,8,.09)
+    }
+    .compare-row:last-child{border-bottom:0}
+    .compare-label b{display:block;font-size:13px}
+    .compare-label span{display:block;color:var(--muted);font-size:10px;margin-top:3px}
+    .compare-values{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .compare-value span{display:block;font-size:9px;font-weight:850;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+    .compare-value strong{display:block;font-size:24px;margin:3px 0 8px;letter-spacing:-.04em}
+    .compare-track{height:7px;background:#eadfcb;border-radius:99px;overflow:hidden}
+    .compare-track i{display:block;height:100%;border-radius:99px;transition:width .35s ease}
+    .compare-value.before .compare-track i{background:#b7a48e}
+    .compare-value.after .compare-track i{background:var(--caracol)}
+    .compare-summary{
+      background:var(--ink);color:#fff7e8;border-radius:22px;padding:22px;
+      border-bottom:3px solid var(--caracol)
+    }
+    .compare-summary-label{font-size:9px;font-weight:900;letter-spacing:.12em;color:#cfb899}
+    .compare-summary>strong{
+      font-family:"Anton","Arial Narrow",Impact,sans-serif;font-weight:400;
+      display:block;font-size:58px;line-height:1;color:var(--caracol);margin:14px 0 4px
+    }
+    .compare-summary>p{font-size:12px;color:#e0cfb5;margin-bottom:22px}
+    .compare-summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .compare-summary-grid>div{background:#5b260f;padding:11px;border-radius:12px}
+    .compare-summary-grid span,.compare-summary-grid small{display:block;font-size:8px;color:#d5bea1}
+    .compare-summary-grid b{display:block;font-size:21px;margin:2px 0}
+    .compare-engagement{margin-top:10px;padding-top:12px;border-top:1px solid rgba(255,255,255,.14)}
+    .compare-engagement>span{display:block;font-size:9px;color:#d5bea1}
+    .compare-engagement>b{display:block;font-size:14px;margin:4px 0}
+    .compare-engagement b i{font-style:normal;color:#fff}
+    .compare-engagement small{display:block;font-size:9px;line-height:1.4;color:#cdb99f}
+    .compare-source{font-size:10px;color:var(--muted);margin:18px 0 0}
+    .brand-logo,.caracol-association img,.coupon-merchant img{background:transparent!important}
+    @media(max-width:820px){
+      .compare-head,.compare-layout{grid-template-columns:1fr}
+      .compare-toggle{justify-content:flex-start}
+      .compare-summary{max-width:420px}
+    }
+    @media(max-width:580px){
+      .reach-compare{padding:20px}
+      .compare-row{grid-template-columns:1fr}
+      .compare-values{grid-template-columns:1fr 1fr}
+    }
+
+  
+    /* ÚLTIMA PASADA EDITORIAL · antes / después + evolución semanal */
+    .hero-before-after{
+      display:grid;grid-template-columns:1fr 34px 1fr;gap:12px;align-items:center;
+      margin-top:28px;max-width:650px
+    }
+    .hero-before-after>div:not(.hero-arrow){
+      border-top:1px solid var(--line);padding-top:13px
+    }
+    .hero-before-after span{
+      display:block;font-size:9px;font-weight:900;letter-spacing:.11em;color:var(--muted)
+    }
+    .hero-before-after b{
+      font-family:"Anton","Arial Narrow",Impact,sans-serif;font-weight:400;
+      display:block;font-size:42px;line-height:1;margin:5px 0;color:#7c5f4c
+    }
+    .hero-before-after small{font-size:10px;color:var(--muted)}
+    .hero-before-after .after b{color:#d5962f}
+    .hero-arrow{text-align:center;font-size:25px;color:#ad8c70}
+    .hero-note small strong{color:#fff4de}
+    .weekly-progress{
+      margin-top:32px;padding-top:38px;border-top:1px solid var(--line)
+    }
+    .weekly-head{
+      display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:end;margin-bottom:24px
+    }
+    .weekly-head h3{
+      font-family:"Montserrat",sans-serif;font-size:clamp(30px,4vw,48px);
+      font-weight:900;letter-spacing:-.045em;line-height:1;margin:10px 0 0
+    }
+    .weekly-head>p{font-size:14px;line-height:1.6;color:var(--muted);margin:0}
+    .weekly-track{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:11px;position:relative
+    }
+    .week-progress{
+      position:relative;background:#fffaf0;border:1px solid var(--line);
+      border-radius:24px;padding:21px;overflow:hidden
+    }
+    .week-progress:before{
+      content:"";position:absolute;left:0;right:0;top:0;height:4px;background:#d6c2a6
+    }
+    .week-progress.peak:before{background:var(--caracol)}
+    .week-progress.peak{box-shadow:0 17px 40px rgba(74,28,8,.08)}
+    .week-progress-top{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      font-size:9px;font-weight:900;letter-spacing:.07em;color:var(--muted)
+    }
+    .week-progress-top b{font-size:10px;color:var(--ink)}
+    .week-number{
+      font-family:"Anton","Arial Narrow",Impact,sans-serif;font-size:64px;line-height:1;
+      color:#ead8bd;margin:26px 0 3px
+    }
+    .week-progress.peak .week-number{color:#f0bb5a}
+    .week-progress h4{
+      font-size:21px;line-height:1.05;letter-spacing:-.035em;margin:0 0 11px
+    }
+    .week-progress>p{font-size:12px;line-height:1.55;color:var(--muted);min-height:94px}
+    .week-kpis{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:16px 0
+    }
+    .week-kpis>div{
+      background:#f2e8d6;border-radius:12px;padding:10px
+    }
+    .week-kpis b{display:block;font-size:18px;letter-spacing:-.04em}
+    .week-kpis span{display:block;font-size:8px;color:var(--muted);margin-top:2px}
+    .week-insight{
+      border-top:1px solid var(--line);padding-top:13px;font-size:10px;line-height:1.5;color:#6e594a
+    }
+    .week-insight strong{color:var(--ink)}
+    .weekly-conclusion{
+      display:grid;grid-template-columns:1fr 36px 1fr 1.35fr;gap:14px;align-items:center;
+      margin-top:13px;background:#4a1c08;color:#fff4de;border-radius:22px;padding:20px 22px
+    }
+    .weekly-conclusion>div:not(.weekly-conclusion-arrow){min-width:0}
+    .weekly-conclusion span{
+      display:block;font-size:8px;font-weight:900;letter-spacing:.11em;color:#d8b998
+    }
+    .weekly-conclusion strong{display:block;font-size:16px;margin:5px 0}
+    .weekly-conclusion small{display:block;font-size:9px;color:#cdb394}
+    .weekly-conclusion .current{border-left:3px solid var(--caracol);padding-left:13px}
+    .weekly-conclusion-arrow{text-align:center;font-size:22px;color:var(--caracol)}
+    .weekly-conclusion-message{
+      border-left:1px solid rgba(255,255,255,.17);padding-left:18px
+    }
+    .weekly-conclusion-message b{font-size:11px;color:var(--caracol)}
+    .weekly-conclusion-message p{font-size:10px;line-height:1.5;color:#dfcdb5;margin:4px 0 0}
+    @media(max-width:900px){
+      .weekly-track{grid-template-columns:1fr}
+      .week-progress>p{min-height:0}
+      .weekly-conclusion{grid-template-columns:1fr}
+      .weekly-conclusion-arrow{text-align:left;transform:rotate(90deg);width:24px}
+      .weekly-conclusion-message{border-left:0;border-top:1px solid rgba(255,255,255,.17);padding:14px 0 0}
+      .weekly-head{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      .hero-before-after{grid-template-columns:1fr 24px 1fr}
+      .hero-before-after b{font-size:35px}
+    }
+
+  
+    .week-example{
+      display:grid;grid-template-columns:82px 1fr;gap:12px;align-items:center;
+      margin:14px 0 4px;padding:8px;border:1px solid var(--line);border-radius:16px;
+      background:#f7eddc;text-decoration:none;color:var(--ink);transition:.18s ease
+    }
+    .week-example:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(74,28,8,.08)}
+    .week-example img{
+      width:82px;height:102px;object-fit:cover;border-radius:11px;background:#e4d7c2
+    }
+    .week-example span{font-size:10px;line-height:1.45;color:#6f5b4c}
+    .week-example span b{display:block;color:var(--ink);font-size:9px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+    .week-progress.peak .week-example{background:#fff2d3;border-color:#e9bd65}
+    @media(max-width:900px){
+      .week-example{grid-template-columns:96px 1fr}
+      .week-example img{width:96px;height:118px}
+    }
+
+  
+    .contract-card .status.done{
+      display:inline-flex;align-items:center;
+      margin-top:17px;padding:7px 10px;border-radius:999px;
+      background:#f2e3c4;color:#7e3d16;font-size:11px;font-weight:900;
+      letter-spacing:.01em
+    }
+
+  
+    /* CALENDARIO EDITORIAL · septiembre aprendido / octubre planificado */
+    .calendar-review{margin-top:48px;padding-top:42px;border-top:1px solid var(--line)}
+    .calendar-review-head{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:end}
+    .calendar-review-head h3{
+      font-family:"Montserrat",sans-serif;font-size:clamp(30px,4vw,48px);
+      line-height:1;font-weight:900;letter-spacing:-.045em;margin:10px 0 0
+    }
+    .calendar-review-head>p{font-size:14px;line-height:1.6;color:var(--muted);margin:0}
+    .calendar-lessons{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:24px 0}
+    .calendar-lessons article{
+      background:#fffaf0;border:1px solid var(--line);border-radius:20px;padding:18px
+    }
+    .calendar-lessons article>span{font-size:9px;font-weight:900;color:#a97a52}
+    .calendar-lessons b{display:block;font-size:15px;margin:12px 0 7px}
+    .calendar-lessons p{font-size:11px;line-height:1.55;color:var(--muted);margin:0}
+    .calendar-shell{background:#fffaf0;border:1px solid var(--line);border-radius:28px;padding:22px}
+    .calendar-toolbar{display:flex;align-items:flex-end;justify-content:space-between;gap:18px}
+    .calendar-label{font-size:9px;font-weight:900;letter-spacing:.13em;color:#9a6333}
+    .calendar-toolbar h4{font-size:25px;letter-spacing:-.035em;margin:6px 0 0}
+    .calendar-tabs{display:flex;gap:6px;flex-wrap:wrap}
+    .calendar-tab{
+      border:1px solid var(--line);background:#f7efdf;color:var(--ink);border-radius:999px;
+      padding:9px 12px;font-size:10px;font-weight:900;cursor:pointer
+    }
+    .calendar-tab.active{background:var(--ink);color:#fff7e8;border-color:var(--ink);box-shadow:inset 0 -3px 0 var(--caracol)}
+    .calendar-feedback{
+      margin:18px 0;padding:13px 15px;border-radius:14px;background:#f4e7cf;
+      display:flex;gap:7px;align-items:flex-start;font-size:11px;line-height:1.5;color:#715b49
+    }
+    .calendar-feedback b{color:var(--ink);flex:0 0 auto}
+    .calendar-weekdays,.editorial-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+    .calendar-weekdays{margin:15px 0 6px}
+    .calendar-weekdays span{text-align:center;font-size:8px;font-weight:900;color:#9b816a;letter-spacing:.08em}
+    .editorial-calendar{display:none}
+    .editorial-calendar.active{display:grid}
+    .day{
+      min-height:104px;border:1px solid #e5d6bf;border-radius:14px;padding:8px;
+      background:#fcf6ea;position:relative;overflow:hidden;text-align:left;color:var(--ink)
+    }
+    button.day{font:inherit;cursor:pointer}
+    .day.empty{border-color:transparent;background:transparent}
+    .day-num{font-size:10px;font-weight:900;position:relative;z-index:2}
+    .day small{display:block;font-size:9px;font-weight:800;line-height:1.25;margin-top:28px;position:relative;z-index:2}
+    .day i{display:block;font-size:8px;font-style:normal;color:#9a7f68;margin-top:5px;position:relative;z-index:2}
+    .day.posted{background:#fff4df}
+    .day.posted:after{
+      content:"";position:absolute;left:8px;bottom:8px;width:5px;height:5px;border-radius:50%;
+      background:#b96c2f
+    }
+    .day.hot{border-color:#dd9a46;background:#fff0ce}
+    .day.featured img{
+      position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.2;filter:saturate(.8)
+    }
+    .day.featured:before{
+      content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,250,240,.28),rgba(255,242,220,.93))
+    }
+    .day.gap{background:#f5eee2;color:#a18d7a}
+    .day.gap small{font-weight:600}
+    .day.planned{background:#f8f4eb;border-color:#d9d3c7}
+    .day.planned:after{
+      content:"";position:absolute;left:8px;bottom:8px;width:5px;height:5px;border-radius:50%;background:#171714
+    }
+    .day.planned small{margin-top:28px}
+    .day.product-slot{box-shadow:inset 0 3px 0 #d5962f}
+    .day.people-slot{box-shadow:inset 0 3px 0 #8f6d56}
+    .day.community-slot{box-shadow:inset 0 3px 0 #6e5b4b}
+    .day.flex-slot{background:#f3f1e8;border-style:dashed}
+    .day.flex-slot:after{background:#dfff00;box-shadow:0 0 0 2px #171714}
+    button.day:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(74,28,8,.08)}
+    .calendar-detail{
+      margin-top:12px;min-height:105px;border:1px solid var(--line);border-radius:16px;
+      background:#f7efdf;padding:15px
+    }
+    .calendar-detail-placeholder{display:grid;gap:3px;color:#8b735f;font-size:11px}
+    .calendar-detail-placeholder b{color:var(--ink);font-size:13px}
+    .cal-detail-card{display:grid;grid-template-columns:86px 1fr;gap:14px;align-items:center}
+    .cal-detail-card img{width:86px;height:86px;object-fit:cover;border-radius:12px}
+    .cal-detail-card .detail-kicker{font-size:8px;font-weight:900;letter-spacing:.1em;color:#9a6333}
+    .cal-detail-card h5{font-size:15px;margin:4px 0 5px}
+    .cal-detail-card p{font-size:10px;line-height:1.5;color:var(--muted);margin:0}
+    .cal-detail-card .detail-metrics{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .cal-detail-card .detail-metrics span{
+      background:#ead9ba;padding:5px 7px;border-radius:999px;font-size:8px;font-weight:800
+    }
+    .cal-detail-card a{font-size:9px;font-weight:900;color:#8d4b20;text-decoration:none}
+    .calendar-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:13px;font-size:8px;color:#88725f}
+    .calendar-legend span{display:flex;align-items:center;gap:5px}
+    .calendar-legend i{width:7px;height:7px;border-radius:50%}
+    .legend-real{background:#b96c2f}.legend-peak{background:#dd9a46}.legend-plan{background:#171714}.legend-flex{background:#dfff00;border:1px solid #171714}
+    .calendar-conclusion{
+      margin-top:12px;background:#4a1c08;color:#fff2df;border-radius:18px;padding:18px 20px;
+      display:grid;grid-template-columns:160px 1fr;gap:18px
+    }
+    .calendar-conclusion b{color:var(--caracol);font-size:12px}
+    .calendar-conclusion p{font-size:11px;line-height:1.55;margin:0;color:#dcc3a7}
+    @media(max-width:900px){
+      .calendar-review-head,.calendar-lessons{grid-template-columns:1fr}
+      .calendar-toolbar{align-items:flex-start;flex-direction:column}
+      .day{min-height:90px}
+      .day small{font-size:8px}
+      .calendar-conclusion{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      .calendar-shell{padding:14px;overflow-x:auto}
+      .calendar-weekdays,.editorial-calendar{min-width:720px}
+      .calendar-detail{min-width:0}
+      .calendar-feedback{display:grid}
+    }
+
+  
+    .hero-growth-note{
+      margin-top:10px;display:inline-flex;align-items:center;gap:8px;
+      padding:8px 11px;border-radius:999px;background:#4a1c08;color:#fff4de;
+      font-size:10px;font-weight:900;letter-spacing:.03em
+    }
+    .hero-growth-note i{
+      width:7px;height:7px;border-radius:50%;background:var(--caracol);display:block
+    }
+
+  
+    .route-list.compact li{padding:18px 0}
+    .route-list.compact span{font-size:14px}
+    .link-world-copy{display:flex;flex-direction:column;justify-content:center}
+
+  
+    .what-is-link{
+      display:inline-flex;align-items:center;justify-content:space-between;gap:18px;
+      width:max-content;min-width:190px;margin:18px 0 4px;padding:13px 16px;
+      border-radius:999px;background:var(--link-acid);color:var(--link-black);
+      text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.01em;
+      transition:transform .18s ease,box-shadow .18s ease
+    }
+    .what-is-link:hover{
+      transform:translateY(-2px);
+      box-shadow:0 12px 24px rgba(15,15,13,.14)
+    }
+    .what-is-link-text{
+      display:inline-block;min-width:118px;
+      transition:opacity .22s ease,transform .22s ease
+    }
+    .what-is-link-text.changing{
+      opacity:0;transform:translateY(4px)
+    }
+    .what-is-link-arrow{font-size:15px;line-height:1}
+
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <nav class="nav">
+    <div class="wrap nav-in">
+      <div class="brand"><img class="brand-logo" src="/informes/caracol/assets/caracol-logo.webp" alt="Caracol Bar Restaurant"><span class="brand-report">Informe · Septiembre 2026</span></div>
+      <div class="nav-links">
+        <a href="#trabajo">Trabajo</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#aprendizajes">Aprendizajes</a>
+        <a href="#octubre">Octubre</a>
+        <a href="#link">LINK</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero wrap">
+    <div class="eyebrow">Informe de marketing · corte 29 septiembre</div>
+    <h1>+258%<br><span class="green">vistas promedio por publicación.</span></h1>
+    <div class="hero-grid">
+      <div>
+        <p class="lead">Las vistas promedio por publicación pasaron de <strong>337,5</strong> en todo el registro anterior disponible a <strong>1.209,9</strong> durante nuestro período de trabajo en septiembre. Eso representa un crecimiento de <strong>+258%</strong>.</p>
+        <div class="hero-before-after">
+          <div><span>TODO EL REGISTRO ANTERIOR</span><b>26.665</b><small>vistas · 79 publicaciones</small></div>
+          <div class="hero-arrow">→</div>
+          <div class="after"><span>8–29 SEPTIEMBRE · 21 DÍAS</span><b>29.037</b><small>vistas · 24 publicaciones</small></div>
+        </div>
+      <div class="hero-growth-note"><i></i> 337,5 → 1.209,9 vistas promedio por publicación</div>
+      </div>
+      <aside class="hero-note">
+        <strong>3,6×</strong>
+        <small>más vistas promedio por publicación: de 337,5 en el historial anterior a 1.209,9 durante nuestro período de trabajo.</small>
+        <div class="greenline"></div>
+        <small>Y en volumen total, <strong>24 piezas en 21 días</strong> generaron 29.037 vistas, superando las 26.665 vistas acumuladas por las 79 publicaciones anteriores.</small>
+      </aside>
+    </div>
+  </header>
+
+  <section class="section" id="trabajo">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">01 · Trabajo mensual</div></div>
+        <div>
+          <h2>NUESTROS COMPROMISOS</h2>
+          <p class="section-intro">Estos son los compromisos mensuales que estamos ejecutando para Caracol. La meta no es llenar redes por llenar: es sostener una presencia real, reconocible y útil para el negocio.</p>
+        </div>
+      </div>
+      <div class="contract">
+        <article class="contract-card"><b>Dirección editorial + calendario</b><span>Ordenar temas, momentos y foco del mes.</span><div class="status done">✓ Cumpliendo</div></article>
+        <article class="contract-card"><b>Captura de material real</b><span>Caracol, personas, cocina, productos y ambiente.</span><div class="status done">✓ Cumpliendo</div></article>
+        <article class="contract-card"><b>8 Reels mensuales</b><span>Producción base acordada.</span><div class="status done">✓ Cumplido · 21 Reels</div></article>
+        <article class="contract-card"><b>4 piezas complementarias</b><span>Programación, información y apoyo de campaña.</span><div class="status done">✓ Cumpliendo</div></article>
+        <article class="contract-card"><b>Stories + comunidad</b><span>Presencia diaria y conversación.</span><div class="status done">✓ Cumpliendo</div></article>
+        <article class="contract-card"><b>Revisión mensual</b><span>Qué repetir, qué ajustar y qué probar.</span><div class="status done">✓ Cumplido · este informe</div></article>
+      </div>
+      <div class="timeline">
+        <div class="timeline-big">24</div>
+        <div>
+          <h3>publicaciones registradas en septiembre</h3>
+          <p><strong>21 son Reels.</strong> El volumen de Reels supera el mínimo mensual contratado. Esto no significa que cada componente contractual sea equivalente: Stories, captura, calendario y revisión se evalúan con evidencia distinta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="resultados">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">02 · Resultados</div></div>
+        <div>
+          <h2>Una base de datos para dejar de adivinar.</h2>
+          <p class="section-intro">Instagram ya está conectado a LINKRRSS/Zernio. Eso nos permite mirar publicación por publicación y aprender de comportamiento real.</p>
+        </div>
+      </div>
+      <div class="metrics">
+        <article class="metric accent"><div class="n">4.543</div><div class="l">seguidores actuales</div></article>
+        <article class="metric"><div class="n">751,7</div><div class="l">alcance promedio</div></article>
+        <article class="metric"><div class="n">1.209,9</div><div class="l">vistas promedio</div></article>
+        <article class="metric"><div class="n">1,81%</div><div class="l">engagement promedio</div></article>
+        <article class="metric"><div class="n">42</div><div class="l">compartidos</div></article>
+        <article class="metric"><div class="n">504</div><div class="l">likes registrados</div></article>
+      </div>
+      <p class="small-note">Corte: septiembre 2026. Fuente: Instagram vía LINKRRSS/Zernio. Las métricas cambian con el tiempo y algunas dimensiones de atribución todavía no están disponibles.</p>
+      <section class="reach-compare" aria-label="Comparación de alcance anterior a septiembre">
+        <div class="compare-head">
+          <div>
+            <div class="kicker">TODO EL HISTORIAL ANTERIOR VS. NUESTRO TRABAJO</div>
+            <h3>Las vistas promedio por publicación crecieron +258%.</h3>
+            <p>Antes del 8 de septiembre hay 79 publicaciones registradas, con 337,5 vistas promedio y 257,3 de alcance promedio. Entre el 8 y el 29 de septiembre, 24 publicaciones promediaron 1.209,9 vistas y 751,7 de alcance. Además, el volumen total de vistas del período superó en 8,9% a todo el registro anterior acumulado.</p>
+          </div>
+          <div class="compare-toggle" role="tablist" aria-label="Período de comparación">
+            <button class="compare-mode active" type="button" data-mode="history" aria-selected="true">Histórico completo</button>
+            <button class="compare-mode" type="button" data-mode="august" aria-selected="false">Agosto completo</button>
+            <button class="compare-mode" type="button" data-mode="previous21" aria-selected="false">21 días previos</button>
+          </div>
+        </div>
+
+        <div class="compare-layout">
+          <div class="compare-bars">
+            <article class="compare-row">
+              <div class="compare-label"><b>Alcance promedio</b><span>por publicación</span></div>
+              <div class="compare-values">
+                <div class="compare-value before">
+                  <span>Histórico</span><strong id="reach-before">257</strong>
+                  <div class="compare-track"><i id="reach-before-bar" style="width:34.2%"></i></div>
+                </div>
+                <div class="compare-value after">
+                  <span>8–29 sep</span><strong>752</strong>
+                  <div class="compare-track"><i style="width:100%"></i></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="compare-row">
+              <div class="compare-label"><b>Mejor alcance</b><span>una publicación</span></div>
+              <div class="compare-values">
+                <div class="compare-value before">
+                  <span>Histórico</span><strong id="max-before">550</strong>
+                  <div class="compare-track"><i id="max-before-bar" style="width:16%"></i></div>
+                </div>
+                <div class="compare-value after">
+                  <span>8–29 sep</span><strong>3.471</strong>
+                  <div class="compare-track"><i style="width:100%"></i></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="compare-row">
+              <div class="compare-label"><b>Vistas promedio</b><span>por publicación</span></div>
+              <div class="compare-values">
+                <div class="compare-value before">
+                  <span>Histórico</span><strong id="views-before">338</strong>
+                  <div class="compare-track"><i id="views-before-bar" style="width:27.9%"></i></div>
+                </div>
+                <div class="compare-value after">
+                  <span>8–29 sep</span><strong>1.210</strong>
+                  <div class="compare-track"><i style="width:100%"></i></div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="compare-summary">
+            <span class="compare-summary-label">CAMBIO PRINCIPAL</span>
+            <strong id="reach-lift">+192%</strong>
+            <p>en alcance promedio por publicación.</p>
+            <div class="compare-summary-grid">
+              <div><span>Publicaciones</span><b id="posts-before">79</b><small>histórico</small></div>
+              <div><span>Publicaciones</span><b>24</b><small>8–29 sep</small></div>
+            </div>
+            <div class="compare-engagement">
+              <span>Engagement</span>
+              <b><i id="eng-before">—</i> → 1,81%</b>
+              <small>Se mantiene en un rango similar mientras crece la distribución.</small>
+            </div>
+          </aside>
+        </div>
+
+        <p class="compare-source" id="compare-source">Base anterior: 79 publicaciones registradas antes del 8 de septiembre. Fuente: Instagram vía LINKRRSS/Zernio.</p>
+      </section>
+
+      <section class="weekly-progress" aria-label="Avance semanal del trabajo de septiembre">
+        <div class="weekly-head">
+          <div>
+            <div class="kicker">21 DÍAS · 3 SEMANAS DE EJECUCIÓN</div>
+            <h3>La estrategia fue avanzando semana a semana.</h3>
+          </div>
+          <p>No buscamos una curva artificial donde todo sube. Cada semana tuvo un objetivo distinto: primero recuperar ritmo y reconocimiento; después aprovechar contexto y eventos; finalmente probar productos, identidad y formatos para aprender qué repetir en octubre.</p>
+        </div>
+
+        <div class="weekly-track">
+          <article class="week-progress">
+            <div class="week-progress-top">
+              <span>SEMANA 1 · 8–14 SEP</span>
+              <b>5 publicaciones</b>
+            </div>
+            <a class="week-example" href="https://www.instagram.com/reel/DdKfMBuM31s/" target="_blank" rel="noopener">
+              <img src="https://media.zernio.com/media/external-posts/1790701103060_qc2ixu1d_6ab97593c27fc766d07e70f6-0.jpg" alt="Ejemplo de publicación de la primera semana">
+              <span><b>Ejemplo de etapa</b> Viernes + música + karaoke para recuperar presencia y frecuencia.</span>
+            </a>
+            <div class="week-number">01</div>
+            <h4>Volver a aparecer con frecuencia.</h4>
+            <p>Karaoke, viernes, música en vivo y anticipación de Fiestas Patrias. La prioridad fue recuperar presencia y empezar a instalar una narrativa más viva de Caracol.</p>
+            <div class="week-kpis">
+              <div><b>5.842</b><span>vistas semana</span></div>
+              <div><b>692</b><span>alcance prom.</span></div>
+              <div><b>2,06%</b><span>engagement</span></div>
+            </div>
+            <div class="week-insight"><strong>Por qué este ejemplo:</strong> representa la primera etapa: volver a ser visibles con una promesa simple de noche, música y encuentro.</div>
+          </article>
+
+          <article class="week-progress peak">
+            <div class="week-progress-top">
+              <span>SEMANA 2 · 15–21 SEP</span>
+              <b>11 publicaciones</b>
+            </div>
+            <a class="week-example" href="https://www.instagram.com/reel/DdcnDxZMINZ/" target="_blank" rel="noopener">
+              <img src="https://media.zernio.com/media/external-posts/1790701100360_rm50qinu_6ab97593c27fc766d07e70a7-0.jpg" alt="Ejemplo de publicación de la segunda semana">
+              <span><b>Ejemplo de etapa</b> “Todo está pasando este 18” concentra evento, contexto y urgencia.</span>
+            </a>
+            <div class="week-number">02</div>
+            <h4>Subir intensidad cuando había algo que contar.</h4>
+            <p>Fiestas Patrias, programación diaria, lluvia y contenido en tiempo real. Esta fue la semana donde la estrategia de contexto + frecuencia tuvo su mayor distribución.</p>
+            <div class="week-kpis">
+              <div><b>18.540</b><span>vistas semana</span></div>
+              <div><b>1.057</b><span>alcance prom.</span></div>
+              <div><b>3.471</b><span>mejor alcance</span></div>
+            </div>
+            <div class="week-insight"><strong>Por qué este ejemplo:</strong> muestra el momento en que dejamos de comunicar actividades aisladas y convertimos Caracol en “el lugar donde está pasando algo ahora”.</div>
+          </article>
+
+          <article class="week-progress">
+            <div class="week-progress-top">
+              <span>SEMANA 3 · 22–29 SEP</span>
+              <b>8 publicaciones</b>
+            </div>
+            <a class="week-example" href="https://www.instagram.com/reel/Dd2Qm0iMXdy/" target="_blank" rel="noopener">
+              <img src="https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/825320748_17909126949514688_8055150477851448769_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7ITRJeY406EQ7kNvwEJvyar&_nc_oc=AdrdSbVAA_oxpEnGjWQdVMu3EJpz9ENZKCDmY_OT0a-WZrgRinHb7OV7bXt2XjTd5hU&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=SizXGPqn36snJHCIHskdkA&_nc_tpa=Q5bMBQIUT-ukqg8PGXk6kL8tPYsqoPuBpnQl_GywCF6Iccq-hjsxlR4untIgI_rQvTM9VDbzc8hH7ufNxA&oh=00_AQMWyqR0Ze2WH6QLKUpCBsy91xyoLUyDZDHcZeGEEB2voA&oe=6AC1ED72" alt="Ejemplo de publicación de la tercera semana">
+              <span><b>Ejemplo de etapa</b> Lunes de Gin: producto, precio y prueba de formato después del evento.</span>
+            </a>
+            <div class="week-number">03</div>
+            <h4>Pasar del evento a la experimentación.</h4>
+            <p>Producto, cerveza, Gin, cierre de septiembre e identidad. Después del peak estacional, bajó la distribución, pero aumentó la interacción proporcional.</p>
+            <div class="week-kpis">
+              <div><b>4.655</b><span>vistas semana</span></div>
+              <div><b>369</b><span>alcance prom.</span></div>
+              <div><b>2,10%</b><span>engagement</span></div>
+            </div>
+            <div class="week-insight"><strong>Por qué este ejemplo:</strong> representa el siguiente problema a resolver: transformar productos y promociones en formatos repetibles, medibles y capaces de generar intención.</div>
+          </article>
+        </div>
+
+        <div class="weekly-conclusion">
+          <div>
+            <span>ANTES</span>
+            <strong>29 publicaciones en agosto</strong>
+            <small>9.534 vistas · 255 alcance prom. · 329 vistas prom.</small>
+          </div>
+          <div class="weekly-conclusion-arrow">→</div>
+          <div class="current">
+            <span>21 DÍAS DE TRABAJO</span>
+            <strong>24 publicaciones</strong>
+            <small>29.037 vistas · 752 alcance prom. · 1.210 vistas prom.</small>
+          </div>
+          <div class="weekly-conclusion-message">
+            <b>El avance real:</b>
+            <p>En tres semanas construimos frecuencia, detectamos qué contextos amplifican el alcance y empezamos a transformar contenido en un sistema de aprendizaje para octubre.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="calendar-review" aria-label="Feedback de calendario editorial">
+        <div class="calendar-review-head">
+          <div>
+            <div class="kicker">FEEDBACK · DE REACTIVO A PLANIFICADO</div>
+            <h3>Septiembre no tuvo un calendario editorial estructurado desde el inicio. Octubre sí lo tendrá.</h3>
+          </div>
+          <p>La ausencia de un calendario previo no impidió avanzar: nos permitió reaccionar rápido a Fiestas Patrias, lluvia y momentos reales. Pero también concentró demasiado contenido en pocos días. Ahora podemos conservar esa agilidad dentro de una estructura semanal.</p>
+        </div>
+
+        <div class="calendar-lessons">
+          <article>
+            <span>01</span>
+            <b>Lo que funcionó</b>
+            <p>El contenido reactivo respondió muy bien. “Llueve en San Pedro” y “Todo está pasando este 18” demostraron que contexto + urgencia pueden amplificar la distribución.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <b>Lo que detectamos</b>
+            <p><strong>9 de 24 publicaciones</strong> se concentraron entre el 15 y el 19 de septiembre. Esa intensidad tuvo sentido por Fiestas Patrias, pero no es una cadencia sostenible para todo el mes.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <b>Qué cambia</b>
+            <p>Octubre tendrá una base planificada por pilares —producto, personas, experiencia y programación— más espacios libres para reaccionar a lo que esté ocurriendo en San Pedro.</p>
+          </article>
+        </div>
+
+        <div class="calendar-shell">
+          <div class="calendar-toolbar">
+            <div>
+              <span class="calendar-label">CALENDARIO EDITORIAL</span>
+              <h4 id="calendar-title">Septiembre · lo que hicimos</h4>
+            </div>
+            <div class="calendar-tabs" role="tablist" aria-label="Cambiar calendario">
+              <button class="calendar-tab active" type="button" data-calendar="september" aria-selected="true">Septiembre · real</button>
+              <button class="calendar-tab" type="button" data-calendar="october" aria-selected="false">Octubre · propuesta</button>
+            </div>
+          </div>
+
+          <div class="calendar-feedback" id="calendar-feedback">
+            <b>Lectura de septiembre:</b>
+            <span>empezamos el 8, aceleramos durante Fiestas Patrias y luego pasamos a probar identidad y producto. El aprendizaje principal es sostener frecuencia sin depender de un gran evento.</span>
+          </div>
+
+          <div class="calendar-weekdays" aria-hidden="true">
+            <span>LUN</span><span>MAR</span><span>MIÉ</span><span>JUE</span><span>VIE</span><span>SÁB</span><span>DOM</span>
+          </div>
+
+          <div class="editorial-calendar september-calendar active" data-calendar-panel="september">
+            <div class="day empty"></div>
+            <div class="day"><span class="day-num">1</span></div>
+            <div class="day"><span class="day-num">2</span></div>
+            <div class="day"><span class="day-num">3</span></div>
+            <div class="day"><span class="day-num">4</span></div>
+            <div class="day"><span class="day-num">5</span></div>
+            <div class="day"><span class="day-num">6</span></div>
+
+            <div class="day"><span class="day-num">7</span></div>
+            <button class="day posted" type="button" data-cal-detail="sep8"><span class="day-num">8</span><small>Karaoke</small><i>1 post</i></button>
+            <div class="day"><span class="day-num">9</span></div>
+            <button class="day posted" type="button" data-cal-detail="sep10"><span class="day-num">10</span><small>Karaoke BR/CL</small><i>1 post</i></button>
+            <button class="day posted featured" type="button" data-cal-detail="sep11"><span class="day-num">11</span><img src="https://media.zernio.com/media/external-posts/1790701103060_qc2ixu1d_6ab97593c27fc766d07e70f6-0.jpg" alt=""><small>Viernes</small><i>1.864 vistas</i></button>
+            <div class="day"><span class="day-num">12</span></div>
+            <button class="day posted" type="button" data-cal-detail="sep13"><span class="day-num">13</span><small>Anticipación 18</small><i>1.745 vistas</i></button>
+
+            <button class="day posted" type="button" data-cal-detail="sep14"><span class="day-num">14</span><small>Semana del 18</small><i>1 post</i></button>
+            <button class="day posted hot" type="button" data-cal-detail="sep15"><span class="day-num">15</span><small>Promo + horario</small><i>2 posts</i></button>
+            <button class="day posted hot" type="button" data-cal-detail="sep16"><span class="day-num">16</span><small>Anticucho</small><i>1 post</i></button>
+            <button class="day posted featured hot" type="button" data-cal-detail="sep17"><span class="day-num">17</span><img src="https://media.zernio.com/media/external-posts/1790701100865_ckqpx67q_6ab97593c27fc766d07e70b0-0.jpg" alt=""><small>Lluvia + contexto</small><i>3 posts · 8.130 vistas</i></button>
+            <button class="day posted featured hot" type="button" data-cal-detail="sep18"><span class="day-num">18</span><img src="https://media.zernio.com/media/external-posts/1790701100360_rm50qinu_6ab97593c27fc766d07e70a7-0.jpg" alt=""><small>Fiestas Patrias</small><i>4.413 vistas</i></button>
+            <button class="day posted hot" type="button" data-cal-detail="sep19"><span class="day-num">19</span><small>Música en vivo</small><i>2 posts</i></button>
+            <button class="day posted" type="button" data-cal-detail="sep20"><span class="day-num">20</span><small>Abrimos domingo</small><i>1 post</i></button>
+
+            <button class="day posted" type="button" data-cal-detail="sep21"><span class="day-num">21</span><small>Karaoke L-M-V</small><i>1 post</i></button>
+            <button class="day posted featured" type="button" data-cal-detail="sep22"><span class="day-num">22</span><img src="https://scontent-lhr6-2.cdninstagram.com/v/t51.82787-15/792029631_17908081245514688_5328122740364369060_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9qk3oYvKqtgQ7kNvwFt0dVy&_nc_oc=AdrCAnktyPh1pBy51VaMq4IeN6mvdHQh7q-A2NCoWg2naTFlbnUvZaT3ItQbv114bnc&_nc_zt=23&_nc_ht=scontent-lhr6-2.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=LBYY5VyYY19McJIPI61yoA&_nc_tpa=Q5bMBQKrKcMaUG8KE4KtYQiam88ThpwKZqb-qreO36SsBvznK_cxSJexLIH6Az1_QUt7aqrA7QsFCJ2b5A&oh=00_AQOoxXtBXkJzzbWo24MVjxsOmoOxVm-7HQzgGV8loHoqRg&oe=6AC16B61" alt=""><small>ARTISTAS</small><i>3,69% engagement</i></button>
+            <button class="day posted" type="button" data-cal-detail="sep23"><span class="day-num">23</span><small>Música diaria</small><i>3,43% eng.</i></button>
+            <div class="day gap"><span class="day-num">24</span><small>sin publicación</small></div>
+            <button class="day posted" type="button" data-cal-detail="sep25"><span class="day-num">25</span><small>Cuello Negro</small><i>producto</i></button>
+            <div class="day gap"><span class="day-num">26</span><small>sin publicación</small></div>
+            <button class="day posted" type="button" data-cal-detail="sep27"><span class="day-num">27</span><small>Cierre mes</small><i>2 posts</i></button>
+
+            <button class="day posted featured" type="button" data-cal-detail="sep28"><span class="day-num">28</span><img src="https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/825320748_17909126949514688_8055150477851448769_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7ITRJeY406EQ7kNvwEJvyar&_nc_oc=AdrdSbVAA_oxpEnGjWQdVMu3EJpz9ENZKCDmY_OT0a-WZrgRinHb7OV7bXt2XjTd5hU&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=SizXGPqn36snJHCIHskdkA&_nc_tpa=Q5bMBQIUT-ukqg8PGXk6kL8tPYsqoPuBpnQl_GywCF6Iccq-hjsxlR4untIgI_rQvTM9VDbzc8hH7ufNxA&oh=00_AQMWyqR0Ze2WH6QLKUpCBsy91xyoLUyDZDHcZeGEEB2voA&oe=6AC1ED72" alt=""><small>Lunes de Gin</small><i>2 posts</i></button>
+            <button class="day posted" type="button" data-cal-detail="sep29"><span class="day-num">29</span><small>Búsqueda cocinero</small><i>1 post</i></button>
+            <div class="day"><span class="day-num">30</span></div>
+            <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+          </div>
+
+          <div class="editorial-calendar october-calendar" data-calendar-panel="october">
+            <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+            <div class="day planned flex-slot"><span class="day-num">1</span><small>Slot reactivo</small><i>si pasa algo</i></div>
+            <button class="day planned" type="button" data-cal-detail="oct2"><span class="day-num">2</span><small>Experiencia viernes</small><i>REEL</i></button>
+            <div class="day"><span class="day-num">3</span></div><div class="day"><span class="day-num">4</span></div>
+
+            <button class="day planned product-slot" type="button" data-cal-detail="oct5"><span class="day-num">5</span><small>Producto con motivo</small><i>REEL · Gin</i></button>
+            <div class="day"><span class="day-num">6</span></div>
+            <button class="day planned community-slot" type="button" data-cal-detail="oct7"><span class="day-num">7</span><small>Karaoke + comunidad</small><i>PIEZA</i></button>
+            <div class="day planned flex-slot"><span class="day-num">8</span><small>Slot reactivo</small><i>contexto</i></div>
+            <button class="day planned" type="button" data-cal-detail="oct9"><span class="day-num">9</span><small>Está pasando ahora</small><i>REEL</i></button>
+            <div class="day"><span class="day-num">10</span></div><div class="day"><span class="day-num">11</span></div>
+
+            <button class="day planned people-slot" type="button" data-cal-detail="oct12"><span class="day-num">12</span><small>Persona Caracol</small><i>REEL</i></button>
+            <div class="day"><span class="day-num">13</span></div>
+            <button class="day planned" type="button" data-cal-detail="oct14"><span class="day-num">14</span><small>Programación útil</small><i>PIEZA</i></button>
+            <div class="day planned flex-slot"><span class="day-num">15</span><small>Slot reactivo</small><i>contexto</i></div>
+            <button class="day planned" type="button" data-cal-detail="oct16"><span class="day-num">16</span><small>Noche Caracol</small><i>REEL</i></button>
+            <div class="day"><span class="day-num">17</span></div><div class="day"><span class="day-num">18</span></div>
+
+            <button class="day planned product-slot" type="button" data-cal-detail="oct19"><span class="day-num">19</span><small>Producto</small><i>REEL</i></button>
+            <div class="day"><span class="day-num">20</span></div>
+            <button class="day planned people-slot" type="button" data-cal-detail="oct21"><span class="day-num">21</span><small>Artista / cocina</small><i>REEL</i></button>
+            <div class="day planned flex-slot"><span class="day-num">22</span><small>Slot reactivo</small><i>contexto</i></div>
+            <button class="day planned community-slot" type="button" data-cal-detail="oct23"><span class="day-num">23</span><small>Comunidad</small><i>PIEZA</i></button>
+            <div class="day"><span class="day-num">24</span></div><div class="day"><span class="day-num">25</span></div>
+
+            <button class="day planned product-slot" type="button" data-cal-detail="oct26"><span class="day-num">26</span><small>Producto + CTA</small><i>REEL</i></button>
+            <div class="day"><span class="day-num">27</span></div>
+            <button class="day planned community-slot" type="button" data-cal-detail="oct28"><span class="day-num">28</span><small>Karaoke / UGC</small><i>PIEZA</i></button>
+            <div class="day planned flex-slot"><span class="day-num">29</span><small>Slot reactivo</small><i>si pasa algo</i></div>
+            <button class="day planned" type="button" data-cal-detail="oct30"><span class="day-num">30</span><small>Cierre de mes</small><i>REEL</i></button>
+            <div class="day"><span class="day-num">31</span></div>
+            <div class="day empty"></div>
+          </div>
+
+          <div class="calendar-detail" id="calendar-detail">
+            <div class="calendar-detail-placeholder">
+              <span>Selecciona un día marcado</span>
+              <b>para ver por qué esa publicación o pieza ocupa ese lugar.</b>
+            </div>
+          </div>
+
+          <div class="calendar-legend">
+            <span><i class="legend-real"></i>Publicado en septiembre</span>
+            <span><i class="legend-peak"></i>Alta concentración / contexto</span>
+            <span><i class="legend-plan"></i>Planificado octubre</span>
+            <span><i class="legend-flex"></i>Espacio reactivo</span>
+          </div>
+        </div>
+
+        <div class="calendar-conclusion">
+          <b>Qué haremos distinto:</b>
+          <p>El calendario de octubre no será rígido. Tendrá una base fija para asegurar continuidad y dejará espacios reactivos para repetir lo mejor de septiembre: aprovechar clima, eventos, artistas y oportunidades reales cuando aparezcan.</p>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="section" id="aprendizajes">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">03 · Casos y aprendizajes</div></div>
+        <div>
+          <h2>No todo el contenido cumple la misma función.</h2>
+          <p class="section-intro">Tomamos cuatro muestras reales para explicar qué problema de comunicación abordó cada pieza y qué aprendimos.</p>
+        </div>
+      </div>
+
+      <div class="case">
+        <article class="post">
+          <img src="https://media.zernio.com/media/external-posts/1790701100865_ckqpx67q_6ab97593c27fc766d07e70b0-0.jpg" alt="Miniatura del Reel Llueve en San Pedro" />
+          <div class="post-body">
+            <div class="post-title">“Llueve en San Pedro… pero la noche sigue en Caracol.”</div>
+            <div class="post-stats">
+              <div class="post-stat"><strong>2.997</strong><span>alcance</span></div>
+              <div class="post-stat"><strong>4.490</strong><span>vistas</span></div>
+              <div class="post-stat"><strong>3,32%</strong><span>engagement</span></div>
+            </div>
+            <a class="post-link" href="https://www.instagram.com/reel/DdZ9XjYsbds/" target="_blank" rel="noopener">Ver publicación ↗</a>
+          </div>
+        </article>
+        <div class="case-copy">
+          <div class="kicker">Caso 01 · Contexto</div>
+          <h3>Cuando el contenido responde al momento.</h3>
+          <p>Una situación real —la lluvia— se convirtió en una razón inmediata para entrar a Caracol. Además consiguió 13 compartidos y un skip rate de 38,5%, muy por debajo del promedio del mes.</p>
+          <div class="reflections">
+            <article class="reflection open"><button type="button"><span class="num">1</span><span class="problem">Problema: comunicación demasiado genérica</span><span class="chev">−</span></button><div class="answer"><strong>Qué resolvimos:</strong> dejamos de hablar de “un bar con música” y hablamos de lo que estaba ocurriendo en San Pedro ese mismo día.</div></article>
+            <article class="reflection"><button type="button"><span class="num">2</span><span class="problem">Problema: poca urgencia para visitar</span><span class="chev">+</span></button><div class="answer"><strong>Qué resolvimos:</strong> la pieza entregó un motivo temporal: “está lloviendo ahora; aquí tienes dónde refugiarte y seguir la noche”.</div></article>
+            <article class="reflection"><button type="button"><span class="num">3</span><span class="problem">Problema: contenido poco compartible</span><span class="chev">+</span></button><div class="answer"><strong>Qué resolvimos:</strong> un mensaje útil para alguien que está en destino es más fácil de enviar a otra persona. Los 13 compartidos son una señal concreta.</div></article>
+          </div>
+        </div>
+      </div>
+
+      <div class="case">
+        <article class="post">
+          <img src="https://media.zernio.com/media/external-posts/1790701100360_rm50qinu_6ab97593c27fc766d07e70a7-0.jpg" alt="Miniatura del Reel Todo está pasando este 18" />
+          <div class="post-body">
+            <div class="post-title">“Todo está pasando este 18 en Caracol.”</div>
+            <div class="post-stats">
+              <div class="post-stat"><strong>3.471</strong><span>alcance</span></div>
+              <div class="post-stat"><strong>4.413</strong><span>vistas</span></div>
+              <div class="post-stat"><strong>40,6%</strong><span>skip rate</span></div>
+            </div>
+            <a class="post-link" href="https://www.instagram.com/reel/DdcnDxZMINZ/" target="_blank" rel="noopener">Ver publicación ↗</a>
+          </div>
+        </article>
+        <div class="case-copy">
+          <div class="kicker">Caso 02 · Evento</div>
+          <h3>De agenda fragmentada a una idea clara.</h3>
+          <p>Fue la pieza de mayor alcance del período. En vez de presentar actividades separadas, construyó una idea simple: <strong>Caracol es donde está pasando el 18.</strong></p>
+          <div class="reflections">
+            <article class="reflection open"><button type="button"><span class="num">1</span><span class="problem">Problema: demasiada información suelta</span><span class="chev">−</span></button><div class="answer"><strong>Qué resolvimos:</strong> música, karaoke, comida y tragos se agruparon bajo una sola promesa fácil de recordar.</div></article>
+            <article class="reflection"><button type="button"><span class="num">2</span><span class="problem">Problema: Caracol visto solo como local</span><span class="chev">+</span></button><div class="answer"><strong>Qué resolvimos:</strong> la comunicación presentó a Caracol como punto de encuentro y escenario de un momento cultural.</div></article>
+            <article class="reflection"><button type="button"><span class="num">3</span><span class="problem">Problema: alcance limitado de piezas aisladas</span><span class="chev">+</span></button><div class="answer"><strong>Qué resolvimos:</strong> la campaña acumuló contexto previo y luego concentró la atención en una pieza de alta oportunidad.</div></article>
+          </div>
+        </div>
+      </div>
+
+      <div class="case">
+        <article class="post">
+          <img src="https://scontent-lhr6-2.cdninstagram.com/v/t51.82787-15/792029631_17908081245514688_5328122740364369060_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9qk3oYvKqtgQ7kNvwFt0dVy&_nc_oc=AdrCAnktyPh1pBy51VaMq4IeN6mvdHQh7q-A2NCoWg2naTFlbnUvZaT3ItQbv114bnc&_nc_zt=23&_nc_ht=scontent-lhr6-2.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=LBYY5VyYY19McJIPI61yoA&_nc_tpa=Q5bMBQKrKcMaUG8KE4KtYQiam88ThpwKZqb-qreO36SsBvznK_cxSJexLIH6Az1_QUt7aqrA7QsFCJ2b5A&oh=00_AQOoxXtBXkJzzbWo24MVjxsOmoOxVm-7HQzgGV8loHoqRg&oe=6AC16B61" alt="Miniatura del Reel En Caracol trabajamos con artistas" />
+          <div class="post-body">
+            <div class="post-title">“En Caracol trabajamos con ARTISTAS.”</div>
+            <div class="post-stats">
+              <div class="post-stat"><strong>415</strong><span>alcance</span></div>
+              <div class="post-stat"><strong>596</strong><span>vistas</span></div>
+              <div class="post-stat"><strong>3,69%</strong><span>engagement</span></div>
+            </div>
+            <a class="post-link" href="https://www.instagram.com/reel/DdlpA9XRbtD/" target="_blank" rel="noopener">Ver publicación ↗</a>
+          </div>
+        </article>
+        <div class="case-copy">
+          <div class="kicker">Caso 03 · Identidad</div>
+          <h3>La marca empieza a tener personas.</h3>
+          <p>No fue la pieza de mayor alcance, pero registró una de las tasas de interacción más altas del mes. La idea fue ampliar “artista” desde el escenario hacia la cocina y el equipo.</p>
+          <div class="reflections">
+            <article class="reflection open"><button type="button"><span class="num">1</span><span class="problem">Problema: una marca basada solo en productos</span><span class="chev">−</span></button><div class="answer"><strong>Qué resolvimos:</strong> dimos protagonismo a las personas que construyen la experiencia.</div></article>
+            <article class="reflection"><button type="button"><span class="num">2</span><span class="problem">Problema: gastronomía poco integrada al relato</span><span class="chev">+</span></button><div class="answer"><strong>Qué resolvimos:</strong> la cocina dejó de ser un elemento aparte y entró dentro de la identidad cultural de Caracol.</div></article>
+            <article class="reflection"><button type="button"><span class="num">3</span><span class="problem">Problema: poca diferenciación</span><span class="chev">+</span></button><div class="answer"><strong>Qué resolvimos:</strong> “trabajamos con artistas” es una idea propia que se puede seguir desarrollando más allá de un evento puntual.</div></article>
+          </div>
+        </div>
+      </div>
+
+      <div class="case">
+        <article class="post">
+          <img src="https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/825320748_17909126949514688_8055150477851448769_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7ITRJeY406EQ7kNvwEJvyar&_nc_oc=AdrdSbVAA_oxpEnGjWQdVMu3EJpz9ENZKCDmY_OT0a-WZrgRinHb7OV7bXt2XjTd5hU&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=SizXGPqn36snJHCIHskdkA&_nc_tpa=Q5bMBQIUT-ukqg8PGXk6kL8tPYsqoPuBpnQl_GywCF6Iccq-hjsxlR4untIgI_rQvTM9VDbzc8hH7ufNxA&oh=00_AQMWyqR0Ze2WH6QLKUpCBsy91xyoLUyDZDHcZeGEEB2voA&oe=6AC1ED72" alt="Miniatura del Reel Lunes de Gin" />
+          <div class="post-body">
+            <div class="post-title">Lunes de Gin · dos versiones, dos respuestas.</div>
+            <div class="post-stats">
+              <div class="post-stat"><strong>686</strong><span>alcance A</span></div>
+              <div class="post-stat"><strong>52</strong><span>alcance B</span></div>
+              <div class="post-stat"><strong>42%</strong><span>skip A</span></div>
+            </div>
+            <a class="post-link" href="https://www.instagram.com/reel/Dd2Qm0iMXdy/" target="_blank" rel="noopener">Ver publicación ↗</a>
+          </div>
+        </article>
+        <div class="case-copy">
+          <div class="kicker">Caso 04 · Experimento</div>
+          <h3>Dos piezas casi iguales no producen el mismo resultado.</h3>
+          <p>Esta comparación es importante porque nos obliga a mirar más allá de “publicar”. Hook, distribución, momento y formato cambian el resultado.</p>
+          <div class="experiment">
+            <article class="exp">
+              <img src="https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/825320748_17909126949514688_8055150477851448769_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7ITRJeY406EQ7kNvwEJvyar&_nc_oc=AdrdSbVAA_oxpEnGjWQdVMu3EJpz9ENZKCDmY_OT0a-WZrgRinHb7OV7bXt2XjTd5hU&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=SizXGPqn36snJHCIHskdkA&_nc_tpa=Q5bMBQIUT-ukqg8PGXk6kL8tPYsqoPuBpnQl_GywCF6Iccq-hjsxlR4untIgI_rQvTM9VDbzc8hH7ufNxA&oh=00_AQMWyqR0Ze2WH6QLKUpCBsy91xyoLUyDZDHcZeGEEB2voA&oe=6AC1ED72" alt="Versión A" />
+              <div><small>Versión A</small><strong>686</strong><span>alcance</span><div class="bar"><i style="width:100%"></i></div><small>Skip 42%</small></div>
+            </article>
+            <article class="exp">
+              <img src="https://scontent-lhr6-2.cdninstagram.com/v/t51.71878-15/825277173_1111069381601732_7625156022724240972_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=IcUoLzcY8yoQ7kNvwEZcOcr&_nc_oc=AdqazkwzufEh_w5xhW98OK8n65la3rR7ovQzMcHi7kXqRriS3sXhCidJBNDhINjUJJQ&_nc_zt=23&_nc_ht=scontent-lhr6-2.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=SizXGPqn36snJHCIHskdkA&_nc_tpa=Q5bMBQJb5CgiVQC-zWS0XJgn7F__OBhwfXf6LZDnuNjB43yQ0srYKG14rpfVjDu6gf4Dqhe1eZ-GNks2qw&oh=00_AQMER2j2V9ZSA6MbJMPJF79N1HRlSt_PrdOjjilIZpXM3A&oe=6AC1D004" alt="Versión B" />
+              <div><small>Versión B</small><strong>52</strong><span>alcance</span><div class="bar"><i style="width:8%"></i></div><small>Skip 28,6%</small></div>
+            </article>
+          </div>
+          <div class="reflections">
+            <article class="reflection open"><button type="button"><span class="num">1</span><span class="problem">Problema: evaluar piezas solo por intuición</span><span class="chev">−</span></button><div class="answer"><strong>Qué resolvimos:</strong> ya podemos comparar variantes con datos y no solo con percepción estética.</div></article>
+            <article class="reflection"><button type="button"><span class="num">2</span><span class="problem">Problema: confundir alcance con calidad</span><span class="chev">+</span></button><div class="answer"><strong>Qué resolvimos:</strong> la versión de menor alcance retuvo mejor. Por eso alcance, retención e interacción deben leerse juntas.</div></article>
+            <article class="reflection"><button type="button"><span class="num">3</span><span class="problem">Problema: no aprender de una publicación</span><span class="chev">+</span></button><div class="answer"><strong>Qué resolvimos:</strong> el contenido puede convertirse en experimento. Octubre debe sistematizar esta lógica.</div></article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="octubre">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">04 · Octubre</div></div>
+        <div>
+          <h2>Menos “publicar por publicar”. Más intención.</h2>
+          <p class="section-intro">La producción base se mantiene. Lo que cambia es la función de cada pieza: queremos que cada publicación haga un trabajo concreto.</p>
+        </div>
+      </div>
+      <div class="strategy">
+        <article><span class="s-num">01</span><div><b>Está pasando ahora</b><p>Contexto real: clima, noche, local lleno, artista comenzando, producto recién servido.</p></div></article>
+        <article><span class="s-num">02</span><div><b>Personas de Caracol</b><p>Artistas, cocina, barra y personajes que vuelven reconocible la experiencia.</p></div></article>
+        <article><span class="s-num">03</span><div><b>Producto con motivo</b><p>No solo mostrar algo: dar una razón concreta para pedirlo hoy.</p></div></article>
+        <article><span class="s-num">04</span><div><b>Programación como experiencia</b><p>Menos cartel, más historia. Mostrar qué se siente estar ahí.</p></div></article>
+        <article><span class="s-num">05</span><div><b>Comunidad + conversación</b><p>Usar Stories y DMs para conocer quién está en San Pedro y qué busca.</p></div></article>
+      </div>
+      <div class="divider"></div>
+      <div class="month-grid">
+        <article class="week"><strong>Semana 1</strong><ul><li>Reel ambiente</li><li>Reel persona</li><li>Pieza programación</li><li>Stories</li></ul></article>
+        <article class="week"><strong>Semana 2</strong><ul><li>Reel producto</li><li>Reel “ahora”</li><li>Pieza informativa</li><li>Stories</li></ul></article>
+        <article class="week"><strong>Semana 3</strong><ul><li>Reel cocina/artista</li><li>Reel experiencia</li><li>Pieza programación</li><li>Stories</li></ul></article>
+        <article class="week"><strong>Semana 4</strong><ul><li>Reel producto</li><li>Reel comunidad</li><li>Pieza cierre/actividad</li><li>Stories</li></ul></article>
+      </div>
+      <div class="timeline" style="background:#171b18;border-color:rgba(255,255,255,.15);color:white">
+        <div class="timeline-big">8 + 4</div>
+        <div>
+          <h3>Producción base propuesta</h3>
+          <p style="color:#c7ccc7"><strong>8 Reels principales + 4 piezas complementarias + Stories/comunidad.</strong> Además, proponemos una activación de conversación por DM para identificar viajeros que estén actualmente en San Pedro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section link-world-section" id="link">
+    <div class="wrap">
+      <div class="link-association">
+        <div class="link-kicker">05 · COLABORACIÓN</div>
+        <div class="association-lockup" aria-label="Caracol más LINK">
+          <div class="association-brand caracol-association">
+            <img src="/informes/caracol/assets/caracol-logo.webp" alt="Caracol Bar Restaurant">
+            <span>CARACOL</span>
+          </div>
+          <div class="association-plus">+</div>
+          <div class="association-brand link-association-brand">
+            <strong>LINK</strong>
+            <i aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="link-world-hero">
+        <div class="link-world-copy">
+          <span class="link-badge">COLABORACIÓN · CARACOL × LINK</span>
+          <h2>Colaboración Caracol × LINK.</h2>
+          <p class="link-lead">Queremos invitar a Caracol a participar en el pre-lanzamiento de LINK con una prueba simple: ofrecer beneficios a viajeros, medir quién los activa y comprobar cuántas visitas y ventas genera.</p>
+          <a class="what-is-link" href="https://link-world-delta.vercel.app/que-es-link/" target="_blank" rel="noopener" aria-label="Qué es LINK">
+            <span class="what-is-link-text" id="what-is-link-text">¿Qué es LINK?</span>
+            <span class="what-is-link-arrow">↗</span>
+          </a>
+          <div class="link-boundary">
+            <b>Colaboración adicional al servicio mensual.</b>
+            <span>Caracol define el producto y el beneficio. LINK aporta la difusión y la trazabilidad. Solo se cobra comisión cuando existe una venta/cupón efectivamente redimido.</span>
+          </div>
+        </div>
+
+        <aside class="link-route-card" aria-label="Recorrido del cupón">
+          <div class="route-head">
+            <span>CÓMO FUNCIONA</span>
+            <i></i>
+          </div>
+          <ol class="route-list compact">
+            <li><b>01</b><span>Ofrecemos un beneficio</span></li>
+            <li><b>02</b><span>El viajero activa su cupón</span></li>
+            <li><b>03</b><span>Caracol recibe una visita medible</span></li>
+          </ol>
+        </aside>
+      </div>
+
+      <div class="coupon-demo">
+        <div class="coupon-demo-copy">
+          <div class="link-kicker">IDEA DE EXPERIENCIA · VISTA CONCEPTUAL</div>
+          <h3>Así podríamos ofrecer el beneficio al pasajero.</h3>
+          <p>La comunicación no tendría que explicar “LINK CUPONES”. El viajero solo ve una oportunidad útil cerca de él, elige un beneficio y lo activa. LINK queda detrás midiendo origen, activación y canje.</p>
+
+          <div class="coupon-options" role="tablist" aria-label="Ejemplos de beneficios">
+            <button class="coupon-option active" type="button"
+              data-title="Gin LINK"
+              data-copy="Un beneficio especial para probar el Lunes de Gin en Caracol."
+              data-benefit="Beneficio exclusivo · condición a definir"
+              data-validity="Ideal para una visita inmediata"
+              aria-selected="true">Gin LINK</button>
+            <button class="coupon-option" type="button"
+              data-title="Combo Viajero"
+              data-copy="Una propuesta cerrada para compartir comida y tragos durante la estadía."
+              data-benefit="Combo especial · precio a definir"
+              data-validity="Pensado para viajeros en San Pedro"
+              aria-selected="false">Combo Viajero</button>
+            <button class="coupon-option" type="button"
+              data-title="Segunda visita"
+              data-copy="Después del primer canje, LINK entrega un nuevo motivo para volver a Caracol."
+              data-benefit="Beneficio de regreso · condición a definir"
+              data-validity="Válido durante la estadía"
+              aria-selected="false">Segunda visita</button>
+          </div>
+
+          <div class="distribution-note">
+            <b>¿Dónde aparecería?</b>
+            <span>Reels y Stories de Caracol, mensajes directos, QR, hoteles, operadores turísticos y otros puntos LINK. Cada canal puede llevar una referencia distinta para saber qué originó la visita.</span>
+          </div>
+        </div>
+
+        <div class="coupon-phone" aria-label="Ejemplo conceptual de cupón LINK">
+          <div class="coupon-phone-top">
+            <strong>LINK</strong>
+            <span><i></i> SAN PEDRO</span>
+          </div>
+          <div class="coupon-phone-screen">
+            <div class="coupon-near">BENEFICIO CERCA DE TI</div>
+            <div class="coupon-merchant">
+              <img src="/informes/caracol/assets/caracol-logo.webp" alt="">
+              <div>
+                <b>Caracol</b>
+                <span>Bar Restaurant · San Pedro de Atacama</span>
+              </div>
+            </div>
+            <div class="coupon-separator"></div>
+            <h4 id="coupon-demo-title">Gin LINK</h4>
+            <p id="coupon-demo-copy">Un beneficio especial para probar el Lunes de Gin en Caracol.</p>
+            <div class="coupon-benefit" id="coupon-demo-benefit">Beneficio exclusivo · condición a definir</div>
+            <div class="coupon-validity" id="coupon-demo-validity">Ideal para una visita inmediata</div>
+            <button class="coupon-activate" id="coupon-demo-activate" type="button">ACTIVAR CUPÓN <span>→</span></button>
+            <div class="coupon-proof" id="coupon-demo-proof">Vista conceptual · aún no es un cupón activo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="link-products">
+        <article>
+          <span>01</span>
+          <h3>Gin LINK</h3>
+          <p>Producto simple, fácil de comunicar y conectado a una promoción que Caracol ya está desarrollando.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Combo Viajero</h3>
+          <p>Una experiencia cerrada para turistas: fácil de entender, fácil de comprar y mejor para medir ticket.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Segunda visita</h3>
+          <p>Un incentivo posterior al primer canje para probar si podemos generar recurrencia durante la misma estadía.</p>
+        </article>
+      </div>
+
+      <div class="link-model">
+        <article><b>CARACOL</b><p>Define el producto, beneficio y margen que puede sostener.</p></article>
+        <article><b>LINK</b><p>Distribuye, identifica el origen, registra activaciones y conecta el canje.</p></article>
+        <article><b>ASOCIACIÓN</b><p>Se cobra por resultado: venta/cupón redimido, separado del trabajo mensual de marketing.</p></article>
+      </div>
+
+      <p class="link-footnote">Objetivo del piloto: construir una trazabilidad simple entre contenido → conversación → cupón → visita → venta → repetición. Cualquier beneficio, precio o comisión se acuerda con Caracol antes de activarse.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer-line">
+      <span>CARACOL · Informe septiembre / propuesta octubre 2026</span>
+      <span>Preparado por LINK</span>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const progress = document.getElementById('progress');
+      const reflections = document.querySelectorAll('.reflection');
+      reflections.forEach(card => {
+        const btn = card.querySelector('button');
+        btn.addEventListener('click', () => {
+          const open = card.classList.toggle('open');
+          const chev = card.querySelector('.chev');
+          if (chev) chev.textContent = open ? '−' : '+';
+        });
+      });
+
+
+
+      const historicalModes = {
+        history: {
+          reach: 257, reachWidth: 34.2, max: 550, maxWidth: 16, views: 338, viewsWidth: 27.9,
+          lift: '+192%', posts: 79, engagement: '—',
+          source: 'Base anterior: 79 publicaciones registradas antes del 8 de septiembre. Total previo: 26.665 vistas. Fuente: Instagram vía LINKRRSS/Zernio.'
+        },
+        august: {
+          reach: 255, reachWidth: 34, max: 550, maxWidth: 16, views: 329, viewsWidth: 27,
+          lift: '+195%', posts: 29, engagement: '1,88%',
+          source: 'Base anterior: 29 publicaciones de agosto completo. Fuente: Instagram vía LINKRRSS/Zernio.'
+        },
+        previous21: {
+          reach: 226, reachWidth: 30, max: 453, maxWidth: 13, views: 280, viewsWidth: 23,
+          lift: '+232%', posts: 12, engagement: '1,86%',
+          source: 'Base anterior comparable: publicaciones disponibles entre el 18 de agosto y el 7 de septiembre (12 publicaciones). Fuente: Instagram vía LINKRRSS/Zernio.'
+        }
+      };
+
+      const compareButtons = [...document.querySelectorAll('.compare-mode')];
+      const setComparisonMode = (mode) => {
+        const data = historicalModes[mode];
+        if (!data) return;
+        const setText = (id,value) => { const el=document.getElementById(id); if(el) el.textContent=value; };
+        const setWidth = (id,value) => { const el=document.getElementById(id); if(el) el.style.width=value+'%'; };
+        setText('reach-before', data.reach.toLocaleString('es-CL'));
+        setText('max-before', data.max.toLocaleString('es-CL'));
+        setText('views-before', data.views.toLocaleString('es-CL'));
+        setText('reach-lift', data.lift);
+        setText('posts-before', data.posts);
+        setText('eng-before', data.engagement);
+        setText('compare-source', data.source);
+        setWidth('reach-before-bar', data.reachWidth);
+        setWidth('max-before-bar', data.maxWidth);
+        setWidth('views-before-bar', data.viewsWidth);
+        compareButtons.forEach(btn => {
+          const active = btn.dataset.mode === mode;
+          btn.classList.toggle('active',active);
+          btn.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+      };
+      compareButtons.forEach(btn => btn.addEventListener('click',()=>setComparisonMode(btn.dataset.mode)));
+
+      // El asset original conserva fondo blanco. Lo limpiamos en el navegador
+      // para mantener exactamente el logo aportado y hacerlo transparente.
+      (() => {
+        const src='/informes/caracol/assets/caracol-logo.webp';
+        const source=new Image();
+        source.onload=() => {
+          try{
+            const canvas=document.createElement('canvas');
+            canvas.width=source.naturalWidth;
+            canvas.height=source.naturalHeight;
+            const ctx=canvas.getContext('2d',{willReadFrequently:true});
+            ctx.drawImage(source,0,0);
+            const imageData=ctx.getImageData(0,0,canvas.width,canvas.height);
+            const d=imageData.data;
+            for(let i=0;i<d.length;i+=4){
+              const dr=255-d[i], dg=255-d[i+1], db=255-d[i+2];
+              const dist=Math.sqrt(dr*dr+dg*dg+db*db);
+              if(dist<72){
+                const alpha=Math.max(0,Math.min(255,((dist-10)/62)*255));
+                d[i+3]=Math.min(d[i+3],alpha);
+              }
+            }
+            ctx.putImageData(imageData,0,0);
+            const clean=canvas.toDataURL('image/png');
+            document.querySelectorAll('img[src="/informes/caracol/assets/caracol-logo.webp"]').forEach(img=>{
+              img.src=clean;
+              img.style.mixBlendMode='normal';
+            });
+            const icon=document.querySelector('link[rel="icon"]');
+            if(icon) icon.href=clean;
+          }catch(e){}
+        };
+        source.src=src;
+      })();
+
+
+      const calendarDetails = {
+        sep8:{title:'Karaoke: primera señal de frecuencia',kicker:'8 SEP · REAL',copy:'Arrancamos mostrando una experiencia reconocible de Caracol: gente que llega por una canción y se queda por el ambiente.',metrics:['631 vistas','393 alcance','2,54% engagement'],url:'https://www.instagram.com/reel/DdCO5Pzs7DD/',img:'https://scontent-lhr11-1.cdninstagram.com/v/t51.82787-15/800317208_17906092707514688_8661296781286958040_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ne5tZLq3-fYQ7kNvwHI5Q2V&_nc_oc=AdoiiimwERdVPZ5ZZs5A_msVVab8tUzqHDL9ALkCPx11On_TxDDxu8ZITx-GAxV_THw&_nc_zt=23&_nc_ht=scontent-lhr11-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=lrJpEUksnT6QttIzsD5BVg&_nc_tpa=Q5bMBQIQ6x2z0kKkRzfJWTyYohtk1yQRB8O2aXgYVQa3YgTuFQOtk333N9byOyQ9RJXsLs-eH9qnbfTmew&oh=00_AQNmkIjsx7dapcf9TUEr6T4phQXxt2quS7rwjU10vW2F5A&oe=6AC0B132'},
+        sep10:{title:'Karaoke pensado también para viajeros',kicker:'10 SEP · REAL',copy:'Probamos una comunicación bilingüe Brasil/Chile para conectar una actividad estable con público viajero.',metrics:['1.089 vistas','575 alcance'],url:'https://www.instagram.com/reel/DdH4s5PMCLl/',img:'https://media.zernio.com/media/external-posts/1790708322825_5vrrqduu_6ab97593c27fc766d07e7110-0.jpg'},
+        sep11:{title:'Viernes: recuperar presencia',kicker:'11 SEP · REAL',copy:'Una pieza simple de noche, música y karaoke. Representa la primera fase: volver a aparecer con frecuencia.',metrics:['1.864 vistas','1.095 alcance'],url:'https://www.instagram.com/reel/DdKfMBuM31s/',img:'https://media.zernio.com/media/external-posts/1790701103060_qc2ixu1d_6ab97593c27fc766d07e70f6-0.jpg'},
+        sep13:{title:'Anticipación antes del evento',kicker:'13 SEP · REAL',copy:'Comenzamos a preparar Fiestas Patrias antes del peak. La anticipación tuvo 3,27% de engagement.',metrics:['1.745 vistas','1.048 alcance','3,27% engagement'],url:'https://www.instagram.com/reel/DdPH_czsa9Y/',img:'https://media.zernio.com/media/external-posts/1790708322852_9ng3tbbc_6ab97593c27fc766d07e7108-0.jpg'},
+        sep14:{title:'Entramos en semana de alta intensidad',kicker:'14 SEP · REAL',copy:'La comunicación cambia desde frecuencia general hacia un bloque concentrado alrededor del 18.',metrics:['513 vistas'],url:'https://www.instagram.com/reel/DdSWYT_MVkb/',img:'https://media.zernio.com/media/external-posts/1790701102137_dztniiio_6ab97593c27fc766d07e70d5-0.jpg'},
+        sep15:{title:'Promoción + horario',kicker:'15 SEP · 2 PUBLICACIONES',copy:'La actividad se intensifica. Empiezan las piezas de servicio, horarios y promoción diciochera.',metrics:['2 publicaciones','1.701 vistas acumuladas'],url:'',img:''},
+        sep16:{title:'Contenido cultural / viajero',kicker:'16 SEP · REAL',copy:'El carrusel del anticucho buscó conversación desde diferencias culturales y países.',metrics:['1.106 vistas','430 alcance'],url:'https://www.instagram.com/p/DdXfKbTjKgD/',img:'https://scontent-lhr6-2.cdninstagram.com/v/t51.82787-15/813332720_17907301458514688_3638628656741200188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nlDByqvJl9UQ7kNvwH01I63&_nc_oc=AdqL7OjsJ_ve-kDa5IEsf00sweou7Lj_Jp6BKPSk4CTbfGTqEqD3HzhnSmY3bphrlLg&_nc_zt=23&_nc_ht=scontent-lhr6-2.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=lrJpEUksnT6QttIzsD5BVg&_nc_tpa=Q5bMBQLouFznK8Wq2eZUMB01dvKqSp4CNDlTRoasWmUlSE-qovibOkKKnpGr6Ob_xnC8DV1MhhrDXnAerA&oh=00_AQOQEPX9sjZj8hjedq3V0c_WrMfc9Hy0fRf3VLfv1fi6kg&oe=6AC09D8A'},
+        sep17:{title:'La reacción al contexto funcionó',kicker:'17 SEP · 3 PUBLICACIONES',copy:'La lluvia se transformó en una razón inmediata para ir. Este es el mejor ejemplo de por qué el calendario debe dejar espacios reactivos.',metrics:['8.130 vistas del día','2.997 alcance del Reel','13 compartidos'],url:'https://www.instagram.com/reel/DdZ9XjYsbds/',img:'https://media.zernio.com/media/external-posts/1790701100865_ckqpx67q_6ab97593c27fc766d07e70b0-0.jpg'},
+        sep18:{title:'El peak: concentrar la promesa',kicker:'18 SEP · REAL',copy:'En vez de separar música, comida y karaoke, resumimos todo bajo una idea: “Todo está pasando este 18 en Caracol”.',metrics:['4.413 vistas','3.471 alcance'],url:'https://www.instagram.com/reel/DdcnDxZMINZ/',img:'https://media.zernio.com/media/external-posts/1790701100360_rm50qinu_6ab97593c27fc766d07e70a7-0.jpg'},
+        sep19:{title:'Continuidad del evento',kicker:'19 SEP · 2 PUBLICACIONES',copy:'Seguimos capitalizando la ventana del 18 con música en vivo y contenido de lo que estaba ocurriendo.',metrics:['2 publicaciones','1.810 vistas acumuladas'],url:'',img:''},
+        sep20:{title:'Extender la oportunidad',kicker:'20 SEP · REAL',copy:'Abrir domingo se convirtió en contenido útil e inmediato, pero ya empieza a bajar la intensidad del evento.',metrics:['510 vistas'],url:'https://www.instagram.com/reel/DdhA1eXM1h2/',img:'https://scontent-lhr11-1.cdninstagram.com/v/t51.82787-15/792235487_17907873597514688_8008057827644956851_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Unf3J5UViBkQ7kNvwGMjTKn&_nc_oc=AdpCTJGtK_cCcV9tXLflf1A8BT5pprhBAFcGfGkNikOiEGSoKSyaV4ya2xsNyQAkQPs&_nc_zt=23&_nc_ht=scontent-lhr11-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=lrJpEUksnT6QttIzsD5BVg&_nc_tpa=Q5bMBQL7XUOfXgXNHNRCHpW3SuAR7aaF0x6YssJ8EqE0TE5rphgO2xPQGt-JSmxnLYNZ6Fk63TwPeb1nSQ&oh=00_AQOkKL63RDDMSm5Ozn-Dp6DkOyUPJssehdvXT41zcop_Ow&oe=6AC0A4E1'},
+        sep21:{title:'Volver a una actividad recurrente',kicker:'21 SEP · REAL',copy:'Karaoke lunes-miércoles-viernes ayuda a construir recurrencia, pero necesita integrarse a una narrativa para no convertirse solo en cartel.',metrics:['870 vistas'],url:'https://www.instagram.com/reel/DdkMzd7s8P_/',img:'https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/817518730_17908059036514688_7632461116314602271_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=90eBkjBm-ZIQ7kNvwH_IGT3&_nc_oc=AdqtIWbibu4ISuN55yPQvcwFMz2HoT8Wyo5K6mH9Hfzf2W8Nycz-whlOJNhmiBaPeI4&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=LMnnoZmw1K4PbTdmCZjL9A&_nc_tpa=Q5bMBQKbWSl96Zox2nSxXUv-Mi6RdBOljwzPKAmqddgHYIHHLDks6N8AAktahRM0VBC3-xmK6UMkjaX9GQ&oh=00_AQPMT4_dyi1KHFWh2l_t9DGbVx27Xa1eW3SO0KQrNQwFhg&oe=6AC0921C'},
+        sep22:{title:'Identidad: “trabajamos con artistas”',kicker:'22 SEP · REAL',copy:'La semana cambia de evento a identidad. Fue una de las mejores tasas de interacción del mes.',metrics:['596 vistas','3,69% engagement'],url:'https://www.instagram.com/reel/DdlpA9XRbtD/',img:'https://scontent-lhr6-2.cdninstagram.com/v/t51.82787-15/792029631_17908081245514688_5328122740364369060_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9qk3oYvKqtgQ7kNvwFt0dVy&_nc_oc=AdrCAnktyPh1pBy51VaMq4IeN6mvdHQh7q-A2NCoWg2naTFlbnUvZaT3ItQbv114bnc&_nc_zt=23&_nc_ht=scontent-lhr6-2.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=LBYY5VyYY19McJIPI61yoA&_nc_tpa=Q5bMBQKrKcMaUG8KE4KtYQiam88ThpwKZqb-qreO36SsBvznK_cxSJexLIH6Az1_QUt7aqrA7QsFCJ2b5A&oh=00_AQOoxXtBXkJzzbWo24MVjxsOmoOxVm-7HQzgGV8loHoqRg&oe=6AC16B61'},
+        sep23:{title:'Programación convertida en experiencia',kicker:'23 SEP · REAL',copy:'“Música en vivo todos los días” buscó sostener una promesa permanente del local.',metrics:['961 vistas','3,43% engagement'],url:'https://www.instagram.com/reel/DdpVkEZMAX1/',img:'https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/817518733_17908353753514688_3675373174378521701_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=F_BM8l0tEA4Q7kNvwH-sViJ&_nc_oc=AdoSy0agDsx3Tfq0fATWIc7XCBM1OlNIYQTUff1SDLQ7xQnznWxyYCsDQv2GNgEW6H8&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=SizXGPqn36snJHCIHskdkA&_nc_tpa=Q5bMBQLGT5ARkC_uiQYrT_9Bp8CWHp4moUEycxWJF2JaT21wEShujYrFulCJPjpwK_bmA6bLKYevzejvbQ&oh=00_AQPF08RTZWoh1R5-b6FpCth4JWjpjEE2_XZdUISqguxqQQ&oe=6AC1E41A'},
+        sep25:{title:'Producto con historia',kicker:'25 SEP · REAL',copy:'Cuello Negro fue una prueba de producto contado desde procedencia e identidad, no solo desde precio.',metrics:['688 vistas'],url:'https://www.instagram.com/reel/Ddudpbes4o2/',img:'https://scontent-lhr11-1.cdninstagram.com/v/t51.82787-15/825320765_17908641399514688_3265102946310525490_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=uwyySRvB6SYQ7kNvwG6VKW2&_nc_oc=Adqg4UWZ9xD6bwi_YsD3mlUwaNQaLokJfIheLdlt0h-kKuJ524CyqtAH5_KIN2gX2Fk&_nc_zt=23&_nc_ht=scontent-lhr11-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=SizXGPqn36snJHCIHskdkA&_nc_tpa=Q5bMBQLKcg4hxLG0Q_8pSyjRWH0BawhicnShw2MLWxU8dscg--Fp2OHxF7l7-G3VMHmbvL5xOK-1-5hFWg&oh=00_AQOwa0zPvvYL_8XOyQDG07pZQkv1R97qvcvU5jLpnFlNEQ&oe=6AC1E169'},
+        sep27:{title:'Cierre de septiembre',kicker:'27 SEP · 2 PUBLICACIONES',copy:'El cierre permitió mirar el mes como experiencia y no como publicaciones aisladas.',metrics:['2 publicaciones','907 vistas acumuladas'],url:'https://www.instagram.com/reel/DdzIo4CsTIn/',img:'https://scontent-lhr11-1.cdninstagram.com/v/t51.71878-15/825326488_1786812519225459_1541727941147110965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=IzDJijkFrvUQ7kNvwFwm8c0&_nc_oc=Ado_t99HfEGwRILx88h445VOr8QB1RxWkLflYTJUAxWUIpQUjm82zw9lcpA5QgbPE_I&_nc_zt=23&_nc_ht=scontent-lhr11-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=SizXGPqn36snJHCIHskdkA&_nc_tpa=Q5bMBQIyAvFpt7v2omTjtpyc__oVYSwhLS6tkshRVnEs8q-3WgoUE87rb_YKdbq75z6YzZBl-K9h6LS1vw&oh=00_AQOPHCyWu2EQe5bQ7zSUp61iaveMIeq1ow2cGi9jpfW0vA&oe=6AC1D2A4'},
+        sep28:{title:'Producto + precio: Lunes de Gin',kicker:'28 SEP · 2 PUBLICACIONES',copy:'Esta pieza representa el paso a experimentación: producto, precio, hook y comparación de variantes.',metrics:['2 publicaciones','1.055 vistas acumuladas'],url:'https://www.instagram.com/reel/Dd2Qm0iMXdy/',img:'https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/825320748_17909126949514688_8055150477851448769_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7ITRJeY406EQ7kNvwEJvyar&_nc_oc=AdrdSbVAA_oxpEnGjWQdVMu3EJpz9ENZKCDmY_OT0a-WZrgRinHb7OV7bXt2XjTd5hU&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=SizXGPqn36snJHCIHskdkA&_nc_tpa=Q5bMBQIUT-ukqg8PGXk6kL8tPYsqoPuBpnQl_GywCF6Iccq-hjsxlR4untIgI_rQvTM9VDbzc8hH7ufNxA&oh=00_AQMWyqR0Ze2WH6QLKUpCBsy91xyoLUyDZDHcZeGEEB2voA&oe=6AC1ED72'},
+        sep29:{title:'Contenido de servicio / equipo',kicker:'29 SEP · REAL',copy:'El aviso de búsqueda de cocinero cumple una función distinta al contenido de adquisición: apoyar una necesidad real del negocio.',metrics:['448 vistas'],url:'https://www.instagram.com/reel/Dd4VRCosPlk/',img:'https://scontent-lhr11-1.cdninstagram.com/v/t51.82787-15/825320596_17909247285514688_3763001352276486467_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=6-PMWmLAyTsQ7kNvwHbMaf1&_nc_oc=AdpBQ9YfWuJPc7QH0eKXXHXZJqgFySAkzbxSQSELOKUIlzKBpG_vYWAFIF68w5z_q3g&_nc_zt=23&_nc_ht=scontent-lhr11-1.cdninstagram.com&edm=ANQ71j8EAAAA&_nc_gid=SizXGPqn36snJHCIHskdkA&_nc_tpa=Q5bMBQJQxLHHY6Swp9-ifLgXrp7FOhCG4M7TGuU4tH6S2wsm5qmgw5TDaN1sm4bEs4iesR4DBv7dTgt9jw&oh=00_AQN1TizEbzZmzcgmO4QGQ91WgubAjPwE21lBIejS7sqK4Q&oe=6AC1CDEE'},
+        oct2:{title:'Experiencia de viernes',kicker:'2 OCT · PROPUESTA',copy:'Abrir el mes con ambiente real y una razón simple para venir. No anunciar “viernes”: mostrar qué se vive un viernes en Caracol.',metrics:['Pilar: experiencia','Formato: Reel'],url:'',img:''},
+        oct5:{title:'Producto con motivo',kicker:'5 OCT · PROPUESTA',copy:'Tomar el aprendizaje de Lunes de Gin y convertirlo en una serie repetible, con producto + beneficio + CTA claro.',metrics:['Pilar: producto','Formato: Reel'],url:'',img:''},
+        oct7:{title:'Karaoke + comunidad',kicker:'7 OCT · PROPUESTA',copy:'Usar una actividad recurrente para provocar participación: canción, encuesta, reacción o contenido de clientes.',metrics:['Pilar: comunidad','Formato: pieza'],url:'',img:''},
+        oct9:{title:'Está pasando ahora',kicker:'9 OCT · PROPUESTA',copy:'Una ventana preparada para contenido contextual: ambiente, clima, local lleno, artista comenzando o una situación real.',metrics:['Pilar: contexto','Formato: Reel'],url:'',img:''},
+        oct12:{title:'Persona de Caracol',kicker:'12 OCT · PROPUESTA',copy:'Extender el aprendizaje de “trabajamos con artistas”: cocinero, bartender, músico o personaje del local.',metrics:['Pilar: personas','Formato: Reel'],url:'',img:''},
+        oct14:{title:'Programación útil',kicker:'14 OCT · PROPUESTA',copy:'Programación sí, pero convertida en una decisión fácil: qué día venir y por qué.',metrics:['Pilar: programación','Formato: pieza'],url:'',img:''},
+        oct16:{title:'Noche Caracol',kicker:'16 OCT · PROPUESTA',copy:'Contenido de experiencia para sostener la asociación entre Caracol y una noche viva en San Pedro.',metrics:['Pilar: experiencia','Formato: Reel'],url:'',img:''},
+        oct19:{title:'Producto',kicker:'19 OCT · PROPUESTA',copy:'Nuevo producto o repetición del formato que mejor haya respondido durante las primeras semanas.',metrics:['Pilar: producto','Formato: Reel'],url:'',img:''},
+        oct21:{title:'Artista / cocina',kicker:'21 OCT · PROPUESTA',copy:'Una segunda pieza humana para que la identidad de Caracol no dependa solo de eventos.',metrics:['Pilar: personas','Formato: Reel'],url:'',img:''},
+        oct23:{title:'Comunidad',kicker:'23 OCT · PROPUESTA',copy:'Clientes, momentos, recomendaciones o participación. La meta es mostrar a Caracol como punto de encuentro.',metrics:['Pilar: comunidad','Formato: pieza'],url:'',img:''},
+        oct26:{title:'Producto + CTA',kicker:'26 OCT · PROPUESTA',copy:'Producto con una acción concreta: venir, preguntar, reservar o activar una futura mecánica LINK.',metrics:['Pilar: producto','Formato: Reel'],url:'',img:''},
+        oct28:{title:'Karaoke / UGC',kicker:'28 OCT · PROPUESTA',copy:'Contenido generado alrededor del karaoke para transformar recurrencia en comunidad reconocible.',metrics:['Pilar: comunidad','Formato: pieza'],url:'',img:''},
+        oct30:{title:'Cierre de mes',kicker:'30 OCT · PROPUESTA',copy:'Cerrar octubre mostrando el mes y utilizando los datos para definir noviembre.',metrics:['Pilar: aprendizaje','Formato: Reel'],url:'',img:''}
+      };
+
+      const calendarTabs=[...document.querySelectorAll('.calendar-tab')];
+      const calendarPanels=[...document.querySelectorAll('[data-calendar-panel]')];
+      const calendarTitle=document.getElementById('calendar-title');
+      const calendarFeedback=document.getElementById('calendar-feedback');
+      const calendarDetail=document.getElementById('calendar-detail');
+
+      const resetCalendarDetail=()=>{
+        if(calendarDetail) calendarDetail.innerHTML='<div class="calendar-detail-placeholder"><span>Selecciona un día marcado</span><b>para ver por qué esa publicación o pieza ocupa ese lugar.</b></div>';
+      };
+
+      calendarTabs.forEach(tab=>tab.addEventListener('click',()=>{
+        const mode=tab.dataset.calendar;
+        calendarTabs.forEach(btn=>{
+          const active=btn===tab;
+          btn.classList.toggle('active',active);
+          btn.setAttribute('aria-selected',active?'true':'false');
+        });
+        calendarPanels.forEach(panel=>panel.classList.toggle('active',panel.dataset.calendarPanel===mode));
+        if(calendarTitle) calendarTitle.textContent=mode==='september'?'Septiembre · lo que hicimos':'Octubre · lo que haremos';
+        if(calendarFeedback) calendarFeedback.innerHTML=mode==='september'
+          ? '<b>Lectura de septiembre:</b><span>empezamos el 8, aceleramos durante Fiestas Patrias y luego pasamos a probar identidad y producto. El aprendizaje principal es sostener frecuencia sin depender de un gran evento.</span>'
+          : '<b>Lógica de octubre:</b><span>una base de 8 Reels + 4 piezas complementarias distribuida durante el mes, con espacios reactivos reservados para aprovechar contexto real sin romper el calendario.</span>';
+        resetCalendarDetail();
+      }));
+
+      document.querySelectorAll('[data-cal-detail]').forEach(btn=>btn.addEventListener('click',()=>{
+        const d=calendarDetails[btn.dataset.calDetail];
+        if(!d||!calendarDetail) return;
+        const media=d.img?'<img src="'+d.img+'" alt="">':'<div style="width:86px;height:86px;border-radius:12px;background:#ead9ba;display:grid;place-items:center;font-size:10px;font-weight:900;color:#9a6333">PLAN</div>';
+        const chips=(d.metrics||[]).map(x=>'<span>'+x+'</span>').join('');
+        const link=d.url?'<a href="'+d.url+'" target="_blank" rel="noopener">Ver publicación ↗</a>':'';
+        calendarDetail.innerHTML='<div class="cal-detail-card">'+media+'<div><div class="detail-kicker">'+d.kicker+'</div><h5>'+d.title+'</h5><p>'+d.copy+'</p><div class="detail-metrics">'+chips+'</div>'+link+'</div></div>';
+      }));
+
+
+      const whatIsLinkText = document.getElementById('what-is-link-text');
+      if (whatIsLinkText) {
+        const linkLanguages = [
+          '¿Qué es LINK?',
+          'O que é LINK?',
+          'What is LINK?',
+          'Qu’est-ce que LINK ?',
+          'Was ist LINK?',
+          'LINKとは？'
+        ];
+        let linkLanguageIndex = 0;
+        setInterval(() => {
+          whatIsLinkText.classList.add('changing');
+          setTimeout(() => {
+            linkLanguageIndex = (linkLanguageIndex + 1) % linkLanguages.length;
+            whatIsLinkText.textContent = linkLanguages[linkLanguageIndex];
+            whatIsLinkText.classList.remove('changing');
+          }, 220);
+        }, 3000);
+      }
+
+      const couponOptions = [...document.querySelectorAll('.coupon-option')];
+      const couponTitle = document.getElementById('coupon-demo-title');
+      const couponCopy = document.getElementById('coupon-demo-copy');
+      const couponBenefit = document.getElementById('coupon-demo-benefit');
+      const couponValidity = document.getElementById('coupon-demo-validity');
+      const couponActivate = document.getElementById('coupon-demo-activate');
+      const couponProof = document.getElementById('coupon-demo-proof');
+
+      couponOptions.forEach(option => {
+        option.addEventListener('click', () => {
+          couponOptions.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-selected','false');
+          });
+          option.classList.add('active');
+          option.setAttribute('aria-selected','true');
+          if (couponTitle) couponTitle.textContent = option.dataset.title || '';
+          if (couponCopy) couponCopy.textContent = option.dataset.copy || '';
+          if (couponBenefit) couponBenefit.textContent = option.dataset.benefit || '';
+          if (couponValidity) couponValidity.textContent = option.dataset.validity || '';
+          if (couponActivate) {
+            couponActivate.classList.remove('activated');
+            couponActivate.innerHTML = 'ACTIVAR CUPÓN <span>→</span>';
+          }
+          if (couponProof) couponProof.textContent = 'Vista conceptual · aún no es un cupón activo';
+        });
+      });
+
+      if (couponActivate) {
+        couponActivate.addEventListener('click', () => {
+          couponActivate.classList.toggle('activated');
+          const active = couponActivate.classList.contains('activated');
+          couponActivate.innerHTML = active ? 'CUPÓN LISTO <span>✓</span>' : 'ACTIVAR CUPÓN <span>→</span>';
+          if (couponProof) couponProof.textContent = active
+            ? 'Demostración de interacción · no genera un canje real'
+            : 'Vista conceptual · aún no es un cupón activo';
+        });
+      }
+
+      const links = [...document.querySelectorAll('.nav-links a')];
+      const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+
+      const onScroll = () => {
+        const doc = document.documentElement;
+        const max = doc.scrollHeight - doc.clientHeight;
+        progress.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0) + '%';
+        let active = sections[0];
+        sections.forEach(s => {
+          if (s.getBoundingClientRect().top < 150) active = s;
+        });
+        links.forEach(a => a.classList.toggle('active', active && a.getAttribute('href') === '#' + active.id));
+      };
+      document.addEventListener('scroll', onScroll, {passive:true});
+      onScroll();
+    })();
+  </script>
+</body>
+</html>
