@@ -24,6 +24,7 @@ Migraciones aplicadas directamente al proyecto:
 - `link_digital_crm_create_client_owner_v1`
 - `link_digital_seed_caracol_v1`
 - `link_digital_propuesta_reference_v1`
+- `link_digital_rpc_anon_denial_v1` (funciones restringidas a usuarios autenticados; cada función valida owner en el servidor)
 
 Tablas específicas: `public.link_digital_dossiers` y `public.link_digital_notes`; se relacionan por FK con `public.clients`, que es la entidad existente. Los planes de marketing se leen desde `public.client_plan_assignments` vía RPC protegida.
 
