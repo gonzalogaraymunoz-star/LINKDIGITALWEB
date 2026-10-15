@@ -34,10 +34,10 @@ const serviceTree={
 
 
 serviceTree.marketing={title:'LINK MARKETING',subtitle:'Gestión y publicidad',products:{
-  campana:{title:'Campaña',price:'Desde $215.000 por campaña*',subs:{anuncio:['Anuncio y creatividad','Diseño gráfico o video, copy y una pieza publicitaria.'],gestion:['Gestión de campaña','Configuración, monitoreo y optimización de una campaña.'],reporte:['Cierre y aprendizaje','Reporte, una reunión y hasta dos cambios incluidos.']}},
-  community:{title:'Community Manager',price:'Desde $430.000 / mes*',subs:{grilla:['Grilla y copies','Planificación mensual y textos de publicación.'],publicacion:['Publicación y comunidad','Programación, historias, comentarios y monitoreo.'],automatizacion:['Mensajes y reporte','Automatización, reporte y reunión mensual.']}},
-  'community-ads':{title:'Community + Publicidad',price:'Desde $535.000 / mes*',subs:{redes:['Gestión de comunidad','Grilla, copies, historias, publicaciones y comentarios.'],ads:['Campaña mensual','Una campaña y diseño de su anuncio.'],mensajes:['Automatización','Mensajes automáticos y reunión mensual.']}},
-  integral:{title:'Marketing Integral',price:'Desde $750.000 / mes*',subs:{contenido:['16 contenidos','Creación y edición de 16 contenidos dentro de la grilla mensual.'],operacion:['Operación de redes','Copies, publicación, comentarios y automatización de mensajes.'],campana:['Impulso publicitario','Una campaña mensual y una reunión.']}}
+  campana:{title:'Campaña',price:'Cotizar según alcance',subs:{anuncio:['Anuncio y creatividad','Diseño gráfico o video, copy y una pieza publicitaria.'],gestion:['Gestión de campaña','Configuración, monitoreo y optimización de una campaña.'],reporte:['Cierre y aprendizaje','Reporte, una reunión y hasta dos cambios incluidos.']}},
+  community:{title:'Community Manager',price:'Cotizar según alcance',subs:{grilla:['Grilla y copies','Planificación mensual y textos de publicación.'],publicacion:['Publicación y comunidad','Programación, historias, comentarios y monitoreo.'],automatizacion:['Mensajes y reporte','Automatización, reporte y reunión mensual.']}},
+  'community-ads':{title:'Community + Publicidad',price:'Cotizar según alcance',subs:{redes:['Gestión de comunidad','Grilla, copies, historias, publicaciones y comentarios.'],ads:['Campaña mensual','Una campaña y diseño de su anuncio.'],mensajes:['Automatización','Mensajes automáticos y reunión mensual.']}},
+  integral:{title:'Marketing Integral',price:'Cotizar según alcance',subs:{contenido:['16 contenidos','Creación y edición de 16 contenidos dentro de la grilla mensual.'],operacion:['Operación de redes','Copies, publicación, comentarios y automatización de mensajes.'],campana:['Impulso publicitario','Una campaña mensual y una reunión.']}}
 }};
 
 const qs=(s,p=document)=>p.querySelector(s),qsa=(s,p=document)=>[...p.querySelectorAll(s)],clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
